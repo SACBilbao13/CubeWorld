@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Page Redirect\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-05 21:13+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Geert De Deckere <geert@idoe.be>\n"
+"Language-Team: Geert De Deckere\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr__;esc_attr_e\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: page-redirect.php:46
+msgid "Permanent"
+msgstr "Permanent"
+
+#: page-redirect.php:47
+msgid "Temporary"
+msgstr "Tijdelijk"
+
+#: page-redirect.php:98
+msgid "Page Redirect"
+msgstr "Pagina Redirect"
+
+#: page-redirect.php:118
+msgid "Destination URL:"
+msgstr "Doorsturen naar:"
+
+#: page-redirect.php:126
+msgid "Type of redirect:"
+msgstr "Soort redirect:"
+
+#: page-redirect.php:130
+#, php-format
+msgid "HTTP response status code: %s"
+msgstr "HTTP response status code: %s"
+

@@ -1,0 +1,1480 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wpmudev\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-24 17:43-0600\n"
+"PO-Revision-Date: 2012-09-24 17:43-0600\n"
+"Last-Translator: Aaron Edwards\n"
+"Language-Team: Incsub\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e;_n\n"
+"X-Poedit-Basepath: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/\n"
+"X-Poedit-SearchPath-0: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates\n"
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:130
+msgid "This is not a valid username"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:137
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:19
+msgid "This username is already taken, please try a different one"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:149
+msgid "This is not a valid email"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:156
+msgid "This email is already registered"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:167
+msgid "Your password is too short"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:364
+#, php-format
+msgid "Only the admin users \"%s\" have access to the WPMU DEV Dashboard plugin and features on this site."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:366
+#, php-format
+msgid "Only the admin user \"%s\" has access to the WPMU DEV Dashboard plugin and features on this site."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:875
+msgid "Return to WPMU DEV Plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:884
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:901
+msgid "Return to WPMU DEV Available Updates"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:892
+msgid "Return to WPMU DEV Themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1036
+#, php-format
+msgid "There is a new version of %1$s available on WPMU DEV. <a href=\"%2$s\" class=\"thickbox\" title=\"%3$s\">View version %4$s details</a> or <a href=\"%5$s\">automatically update</a>."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1038
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1063
+#, php-format
+msgid "There is a new version of %1$s available on WPMU DEV. <a href=\"%2$s\" class=\"thickbox\" title=\"%3$s\">View version %4$s details</a> or <a href=\"%5$s\" target=\"_blank\" title=\"Download update from WPMU DEV\">download update</a>."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1072
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1077
+msgid "WPMU DEV Plugins/Themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1073
+msgid "Your plugins/themes from WPMU DEV are all up to date."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1078
+msgid "The following plugins/themes from WPMU DEV have new versions available."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1082
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1092
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:180
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:249
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:326
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:376
+msgid "Name"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1083
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1093
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:181
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:250
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:327
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:377
+msgid "Links"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1084
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1094
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:182
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:251
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:328
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:378
+msgid "Installed Version"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1085
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1095
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:183
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:252
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:329
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:379
+msgid "Latest Version"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1086
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1096
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:184
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:253
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:330
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:380
+msgid "Actions"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1106
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1108
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:136
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:139
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:205
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:208
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:344
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:346
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:394
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:396
+msgid "Auto Update"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1110
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:142
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:211
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:348
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:398
+msgid "Download Update"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1116
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1424
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1430
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:151
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:220
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:356
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:406
+#, php-format
+msgid "%s Details"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1116
+#, php-format
+msgid "You have version %1$s installed. Update to %2$s."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1117
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:152
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:221
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:357
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:407
+#, php-format
+msgid "%s Installation & Use Instructions"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1117
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:152
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:221
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:357
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:407
+msgid "Installation & Use Instructions"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1117
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:152
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:221
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:357
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:407
+msgid "Get Support"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1119
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:154
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:223
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:359
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:409
+#, php-format
+msgid "View version %s details"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1150
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1155
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1525
+msgid "WPMU DEV Dashboard"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1150
+msgid "WPMU DEV"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1155
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1559
+msgid "Dashboard"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1159
+msgid "WPMU DEV Plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1159
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1560
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1772
+msgid "Plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1165
+msgid "WPMU DEV Themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1165
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1561
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1789
+msgid "Themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1170
+msgid "WPMU DEV Support"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1170
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1566
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:13
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:46
+msgid "Support"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1175
+msgid "WPMU DEV Community"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1175
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1565
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:7
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:153
+msgid "Community"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1180
+msgid "WPMU DEV Updates"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1180
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1563
+msgid "Updates"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1186
+msgid "WPMU DEV Settings"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1186
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:29
+msgid "Manage"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1339
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1344
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1349
+msgid "Notice dismissed."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1408
+msgid "Install Now"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1410
+msgid "Download Now"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1413
+msgid "Upgrade your WPMU DEV Membership to download"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1413
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1585
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1590
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:95
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:102
+msgid "Upgrade Now"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1415
+msgid "Purchase this item on WPMU DEV"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1415
+msgid "Purchase Now"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1421
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:23
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:38
+msgid "Installed"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1453
+msgid "Featured WPMU DEV Plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1455
+msgid "View all Featured Plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1455
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1465
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1475
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1485
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1495
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1505
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1515
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:35
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:49
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:43
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:57
+msgid "View More &raquo;"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1462
+msgid "Popular WPMU DEV Plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1465
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1485
+msgid "View all WPMU DEV Plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1472
+msgid "Newest WPMU DEV Plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1475
+msgid "View all the Latest Plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1482
+msgid "Recently Updated WPMU DEV Plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1492
+msgid "Featured WPMU DEV Themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1495
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1505
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1515
+msgid "View all WPMU DEV Themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1502
+msgid "Newest WPMU DEV Themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1512
+msgid "Recently Updated WPMU DEV Themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1526
+msgid "WPMU DEV News"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1558
+msgid "Quick Links:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1559
+msgid "View your WPMU DEV Dashboard"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1560
+msgid "Browse and install WPMU DEV Plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1561
+msgid "Browse and install WPMU DEV Themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1563
+msgid "Update your WPMU DEV Plugins and Themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1565
+msgid "Participate in the WPMU DEV community"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1566
+msgid "Get support for WPMU DEV Plugins and Themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1575
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:83
+msgid "Go Now"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1607
+msgid "Latest WPMU DEV Release:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1609
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1625
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:133
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:145
+msgid "More Information &raquo;"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1617
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:163
+msgid "Setup your WPMU DEV account to install"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1617
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1619
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:140
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:163
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:165
+msgid "INSTALL"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1621
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:142
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:167
+msgid "DOWNLOAD"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1623
+msgid "Upgrade to Install"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1641
+#, php-format
+msgid "<strong>RSS Error</strong>: %s"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1705
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1730
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:24
+msgid "You have reached your maximum enabled sites for automatic updates, one-click installations, and direct support through the WPMU DEV Dashboard plugin. You may <a href=\"http://premium.wpmudev.org/wp-admin/profile.php?page=wdpun\">change which sites are enabled or upgrade to a higher membership level here &raquo;</a>"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1863
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1869
+msgid "There has been an error contacting remote server"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1883
+msgid "You do not have permissions for this."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/update-notifications.php:1904
+msgid "There has been a temporary error contacting the remote server."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:28
+msgid "<strong>WPMU DEV updates are available</strong>: These may be critical for the security or performance of this site so please review your available updates today &raquo;"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:32
+msgid "Dismiss this notice for this session"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:32
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:114
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:149
+msgid "Dismiss"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:48
+msgid "Get started with WPMU DEV"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:48
+msgid "it's free, easy and will transform your WordPress experience."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:49
+msgid "Get Started"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:114
+msgid "Dismiss this notice for one month"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:131
+msgid "New WPMU DEV Release:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:149
+msgid "Dismiss this announcement"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:167
+msgid "Whoops!"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/notifications.php:167
+msgid "You need to remove the old version of the WPMU DEV Update Notifications plugin! Check for the update-notifications.php file in the /mu-plugins/ folder and delete it."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:13
+msgid "Search community"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:26
+msgid "Your reputation:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:31
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:29
+msgid "Brand new here"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:33
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:31
+msgid "Getting my WPMU DEV Wings"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:35
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:33
+msgid "Starting to get into this DEV thing"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:37
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:35
+msgid "Serious WPMU DEV-ster"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:39
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:37
+msgid "WPMU DEV Expert"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:41
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:39
+msgid "Like some sort of WPMU DEV God"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:46
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:44
+msgid "I'm helpful"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:48
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:46
+msgid "Seriously helpful member"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:50
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:48
+msgid "Exceptionally helpful"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:52
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:50
+msgid "Mindblowingly helpful member"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:57
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:55
+msgid "Lifetime WPMU Dev member"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:60
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:25
+msgid "You currently have "
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:60
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:25
+msgid " reputation points"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:62
+msgid "VIEW REPUTATION REPORT"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:68
+msgid "Participate in our community discussions and earn reputation points. <b>1000 points</b> gets you a free lifetime <b>WPMU DEV</b> membership!"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:73
+msgid "Recent topics started by you:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:78
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:116
+msgid "Topic:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:79
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:117
+msgid "Responses:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:80
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:118
+msgid "Latest response by:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:94
+msgid "You haven't started any topics yet."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:106
+msgid "Latest topics:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/community.php:109
+msgid "START A DISCUSSION"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:15
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:54
+msgid "Search support"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:16
+msgid "Q&A"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:16
+msgid "Ask a question"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:20
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:162
+msgid "YOUR LATEST Q&A ACTIVITY:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:20
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:162
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:162
+msgid "HIDE"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:25
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:167
+msgid "Resolved"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:33
+msgid "Enter your API key to show activity"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:35
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:174
+msgid "No support activity yet."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:35
+msgid "Ask a question &raquo;"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:44
+msgid "Products"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:46
+msgid "Search products"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:51
+msgid "LATEST PLUGIN RELEASES:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:70
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:123
+msgid "hover for more"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:78
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:131
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:143
+msgid "Learn more"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:96
+msgid "All plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:102
+msgid "LATEST THEME RELEASES:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:149
+msgid "All themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:155
+msgid "Help other members and earn reputation points."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:156
+msgid "Latest community topics:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-bottom.php:162
+msgid "SHOW"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:12
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:13
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:12
+msgid "Welcome"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:13
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:14
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:13
+#, php-format
+msgid "member since %s"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:14
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:10
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:14
+msgid "Change Gravatar"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:20
+msgid "You are currently a free member."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:20
+msgid "Upgrade your membership"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:20
+msgid "to unleash the full<br/> power of WPMU DEV."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:25
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:33
+msgid "free plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:39
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:47
+msgid "free themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:57
+msgid " members get:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:59
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:67
+msgid "Access to over 140 WordPress Premium plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:60
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:68
+msgid "Quality WordPress, Multisite &amp; BuddyPress themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:61
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:69
+msgid "Spectacularly fast WordPress support service"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:62
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:70
+msgid "Amazing community of WordPress professionals"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:65
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:73
+msgid "Find out more &raquo;"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:71
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:79
+msgid "premium plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-free.php:83
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:91
+msgid "premium themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:16
+msgid "Your reputation"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:19
+msgid "Participate in our community discussions and earn reputation points. 1000 points gets you a free lifetime WPMU DEV membership!"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:64
+msgid "Points"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:65
+msgid "When"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:66
+msgid "By"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:77
+msgid "On:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:87
+msgid "Your recent activity"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-full.php:98
+msgid "VIEW ALL ACTIVITY"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:11
+msgid "Get your <b>free</b> API key"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:12
+msgid "to experience the power of WPMU DEV"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:16
+msgid "Your desired username"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:22
+msgid "Your email"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:28
+msgid "Choose your password"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:36
+msgid "Get your API key &raquo;"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:37
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:33
+msgid "Already a member?"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:37
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:73
+msgid "Click here"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:46
+msgid "Invalid Username or Password. Please try again."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:46
+msgid "Forgot your password?"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:49
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/status.php:21
+msgid "Your API Key was invalid. Please try again."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:53
+msgid "Login to WPMU DEV"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:54
+msgid "to enable the power of the Dashboard"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:58
+msgid "Your username"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:64
+msgid "Your password"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:72
+msgid "Login &raquo;"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:73
+msgid "Not a member yet?"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:81
+msgid "members get:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:83
+msgid "Hundreds of amazing WordPress plugins to choose from"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:84
+msgid "Quality WordPress, Multisite &amp; BuddyPress themes and theme packs"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:85
+msgid "Spectacular WordPress support, fast response times, white label videos &amp; more"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-signup.php:86
+msgid "An amazing community of WordPress professionals to interact with"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:19
+msgid "Your Purchase:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:25
+msgid "Install"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:27
+msgid "Download"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/dashboard-single.php:65
+msgid "&nbsp; members get:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:13
+msgid "Free only"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:18
+msgid "Sort:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:20
+msgid "Release date"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:21
+msgid "Recently updated"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:22
+msgid "Popularity"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:23
+msgid "Downloads"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:24
+msgid "Alphabetically"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:30
+msgid "Instant Search:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:31
+msgid "Search"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:31
+msgid "Clear Search"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:35
+msgid "Results:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:45
+msgid "You have reached your maximum enabled sites for one-click installations. You may <a href=\"http://premium.wpmudev.org/wp-admin/profile.php?page=wdpun\">change which sites are enabled or upgrade to a higher membership level here &raquo;</a>"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:50
+#, php-format
+msgid "Please <a href=\"%s\">create a free account or enter your details</a> to enable one-click installations."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:53
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:159
+msgid "INSTALLED"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:53
+msgid "INSTALLED & ACTIVATED"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:60
+msgid "ERROR"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:66
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:84
+msgid "close"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:69
+msgid "Hang on a minute... It looks like your WordPress site isn't configured to allow one-click installations of plugins and themes."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:72
+msgid "You may still install this plugin using the manual process (by you entering your FTP credentials in the next step), or you can easily set up your site to do it automatically from now on."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:77
+msgid "MANUAL INSTALL"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:78
+msgid "Setup one-click installation"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:80
+msgid "hide this message in future"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:85
+msgid "You can set up one-click installations by adding these lines to your <code>wp-config.php</code> file and customizing:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:90
+msgid "More information"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:105
+msgid "Requires Multisite"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:108
+msgid "Requires BuddyPress"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:132
+msgid "More Info &raquo;"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:165
+msgid "DOWNLOADING..."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:165
+msgid "INSTALLING..."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:169
+msgid "UPGRADE TO INSTALL"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:179
+msgid "No Results"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:180
+msgid "Please change or <a href=\"#\" title=\"Clear Filters\">clear</a> your search filters above"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:208
+msgid "Loading..."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:212
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:36
+msgid "or"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:212
+msgid "Read more on WPMU DEV &raquo;"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/listings.php:216
+msgid "close plugin info"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:17
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/status.php:32
+msgid "Settings Saved!"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:35
+msgid "To change which users can have access to the WPMU DEV Dashboard, place this line in your wp-config.php file with the desired userids:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:46
+msgid "Your Membership Details"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:49
+msgid "If you need to hide this information, place this line in your wp-config.php file:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:54
+msgid "Your WPMU DEV API Key"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:58
+msgid "Change your API key"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:58
+msgid "EDIT"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:63
+msgid "MODIFY MEMBERSHIP"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:69
+msgid "Please create a free account to get an API key and enable settings:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:71
+msgid "Add your API key"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:71
+msgid "ADD"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:76
+msgid "Admin Notices"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:78
+msgid "Notices are only displayed to site Administrators (Super-Admins in Multisite installs). Full & current WPMU DEV members can permanently disable all admin notices, though individual notices can always be dismissed by any admin."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:82
+msgid "Upgrade<br />notice"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:91
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:104
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:120
+msgid "Show"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:92
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:105
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:121
+msgid "Hide"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:93
+msgid "Only current WPMU DEV members <br />can hide the upgrade notice"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:95
+msgid "New release<br />announcements"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:106
+msgid "Only full WPMU DEV members can hide new release announcements"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:111
+msgid "Special<br />offers"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:122
+msgid "Only full WPMU DEV members can hide <br />special offers"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:124
+msgid "Dashboard<br />widgets"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:126
+msgid "You may hide the WPMU DEV dashboard widgets via the \"Screen Options\" dropdown on the dashboard."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/settings.php:131
+msgid "SAVE CHANGES"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/status.php:7
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:7
+msgid "Update data successfully refreshed from WPMU DEV."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/status.php:9
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:9
+msgid "There was a problem refreshing data from WPMU DEV."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/status.php:41
+msgid "Updates, upgrades &amp; new releases "
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/status.php:46
+msgid "scoping"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/status.php:47
+msgid "development"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/status.php:48
+msgid "testing"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/status.php:53
+msgid "Type"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/status.php:54
+msgid "Project name"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/status.php:55
+msgid "Version"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/status.php:56
+msgid "Status"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/status.php:57
+msgid "Who"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:4
+msgid "Here are some ways you can solve your problem right now!"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:6
+msgid "Make sure you're running the latest version of WordPress."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:7
+msgid "<a href='admin.php?page=wpmudev-updates'>Make sure</a> you are using the latest version of our product."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:8
+msgid "Have you read the <a href='admin.php?page=wpmudev-updates&tab=installed'>'Usage' instructions</a>? It's like a mini manual."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:9
+msgid "Have you tried searching? Use the field in the top right to search our support."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:11
+msgid "And if you're feeling a bit more technical:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:13
+msgid "Disable and re-activate the plugin or theme."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:14
+msgid "Check for a plugin conflict - try disabling other plugins and see if that fixes it... if it does, notify us &amp; we'll find a fix."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:15
+msgid "Check for a theme conflict - try another theme (like Twenty Eleven) and see if it fixes it... if it does, notify us &amp; we'll find a fix."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:28
+msgid "members get unlimited, comprehensive support for <br/>all our products and any <br />WordPress related Queries"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:30
+msgid "Become a member &raquo;"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:64
+msgid "Success!"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:65
+msgid "Thanks for contacting Support, we'll get back to you as soon as possible."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:66
+msgid "You can view or add to your support request here &raquo;"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:72
+msgid "Question? Bug? Feature request? <br />Let's see how we can help."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:79
+msgid "You have reached your maximum enabled sites for direct dashboard support. You may <a href=\"http://premium.wpmudev.org/wp-admin/profile.php?page=wdpun\">change which sites are enabled or upgrade to a higher membership level here &raquo;</a>"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:83
+#, php-format
+msgid "Only the admin user \"%s\" has access to WPMU DEV support."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:87
+msgid "Please enter your question title."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:90
+msgid "There was a problem posting your support question:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:92
+msgid "What's your question or topic?<br /> Be specific please :)"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:97
+msgid "Please select what you need support for."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:99
+msgid "Select an Installed Product:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:115
+msgid "Plugins:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:118
+msgid "Themes:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:121
+msgid "General Topic:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:122
+msgid "General"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:123
+msgid "BuddyPress"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:124
+msgid "Beginners WordPress Discussion"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:125
+msgid "Advanced WordPress Discussion"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:126
+msgid "Feature Suggestions &amp; Feedback"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:132
+msgid "Please enter your support question."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:133
+msgid "Ok, go for it..."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:137
+msgid "Please don't share any private information (passwords, API keys, etc.) here, support staff will ask for these via email if they are required."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:140
+msgid "Notify me of responses via email"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:144
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:146
+msgid "Post your question"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/support.php:148
+msgid "Posting question..."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:20
+msgid "You have reached your maximum enabled sites for automatic updates. You may <a href=\"http://premium.wpmudev.org/wp-admin/profile.php?page=wdpun\">change which sites are enabled or upgrade to a higher membership level here &raquo;</a>"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:24
+#, php-format
+msgid "Please <a href=\"%s\">create a free account or enter your details</a> to enable automatic updates."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:37
+msgid "Available Updates"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:62
+msgid "WPMU DEV Updates Available"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:121
+msgid "Here you can find information about any available updates for your installed WPMU DEV themes and plugins. Note that it is important to keep your themes and plugins updated for security, performance, and to maintain compatibility with the latest versions of WordPress. Most plugins and themes are able to be auto-updated depending on where they are installed."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:158
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:227
+msgid "View Changes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:160
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:229
+msgid "Close"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:166
+msgid "No WPMU DEV plugin updates required"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:169
+msgid "WPMU DEV Plugin Updates"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:173
+msgid "Update All Plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:235
+msgid "No WPMU DEV theme updates required"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:238
+msgid "WPMU DEV Theme Updates"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:242
+msgid "Update All Themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:263
+msgid "Please note that all data is updated every 12 hours."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:263
+msgid "Last updated:"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:263
+msgid "Update Now"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:269
+msgid "WPMU DEV Installed"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:319
+msgid "Here you can find a list of the WPMU DEV plugins and themes installed on this server, along with quick links to documentation and support for each."
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:321
+msgid "Installed WPMU DEV Plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:366
+msgid "No installed WPMU DEV plugins"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:371
+msgid "Installed WPMU DEV Themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:416
+msgid "No installed WPMU DEV themes"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:421
+msgid "Installed plugins and themes above only refer to those provided to"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:421
+msgid "WPMU DEV members"
+msgstr ""
+
+#: /Users/aaron2/Documents/WPMU-Test/wp-content/plugins/wpmudev-updates/includes/templates/updates.php:421
+msgid "by Incsub - other plugins and themes are not included here."
+msgstr ""
+
