@@ -892,7 +892,7 @@ function wp_rss( $url, $num_items = -1 ) {
 
 		echo '</ul>';
 	} else {
-		_e( 'An error has occurred, which probably means the feed is down. Try again later.' );
+		_e( 'There is no article in the feed.' );
 	}
 }
 endif;

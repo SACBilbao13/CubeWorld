@@ -11,10 +11,10 @@
 function get_the_qa_menu( ) {
 	global $user_ID;
 	$menu = array();
-	
+
 	if ( ($user_ID == 0 && qa_visitor_can('read_questions')) || current_user_can( 'read_questions' )) {
 		$menu[] = array(
-				'title' => __( 'Questions', QA_TEXTDOMAIN ),
+				'title' => __( 'Proposed Missions', QA_TEXTDOMAIN ),
 				'type' => 'archive',
 				'current' => !is_qa_page( 'unanswered' ) && !is_qa_page( 'ask' ) && !is_qa_page( 'edit' )
 			);
@@ -24,18 +24,18 @@ function get_the_qa_menu( ) {
 				'current' => is_qa_page( 'unanswered' )
 			);
 	}
-	
+
 	if ( ($user_ID == 0 && qa_visitor_can('publish_questions')) || current_user_can( 'publish_questions' )) {
 		$menu[] = array(
-			'title' => __( 'Ask a Question', QA_TEXTDOMAIN ),
+			'title' => __( 'Propose a Mission', QA_TEXTDOMAIN ),
 			'type' => 'ask',
 			'current' => is_qa_page( 'ask' )
 		);
 	}
 	$menu = apply_filters( 'qa_modify_menu_items', $menu );
-	
+
 	$out = apply_filters( 'qa_before_menu', '' );
-	
+
 	$out .= "<div id='qa-menu'>";
 
 	$out .= "<ul>";
@@ -58,9 +58,9 @@ function get_the_qa_menu( ) {
 	$out .= get_the_qa_search_form();
 	$out .= "</li>";
 	$out .= "</ul>";
-	
+
 	$out = apply_filters( 'qa_after_menu', $out );
-	
+
 	$out .= "</div>";
 
 	return $out;
@@ -103,7 +103,7 @@ function get_the_qa_pagination( $query = null ) {
 
 	if ( $query->max_num_pages <= 1 )
 		return;
-		
+
 	$out = '';
 
 	$current_page = max( 1, $query->get( 'paged' ) );
@@ -141,7 +141,7 @@ function get_the_qa_pagination( $query = null ) {
 		$out .= get_qa_single_page_link( $query, $current_page + 1, __( 'next', QA_TEXTDOMAIN ), 'next' );
 
 	$out .= '</div>';
-	
+
 	return $out;
 }
 function the_qa_pagination( $query = null ) {
@@ -175,7 +175,7 @@ function get_the_qa_time( $id ) {
 		$h_time = sprintf( __( '%s ago', QA_TEXTDOMAIN ), human_time_diff( $time ) );
 	else
 		$h_time = mysql2date( get_option( 'date_format' ), $post->post_date );
-	
+
 	$h_time = apply_filters( 'qa_time', $h_time, $time);
 	return '<span class="qa-timediff">' . $h_time . '</span>';
 }
@@ -213,7 +213,7 @@ function get_the_qa_action_links( $id ) {
 
 	if ( current_user_can( 'delete_post', $id ) )
 		$links['delete'] = __( 'delete', QA_TEXTDOMAIN );
-		
+
 	if ( is_user_logged_in() ) {
 		if ( current_user_can( 'flag_questions', $id ) )
 			$links['flag'] = __( 'report', QA_TEXTDOMAIN );
@@ -243,7 +243,7 @@ function get_the_qa_action_links( $id ) {
 		else
 			$links[ $type ] = _qa_html( 'a', array( 'href' => qa_get_url( $type, $id ) ), $title );
 	}
-	
+
 	$out = '';
 
 	$out .= '<div class="qa-action-links">';
@@ -251,7 +251,7 @@ function get_the_qa_action_links( $id ) {
 	if ( $show_form )
 		$out .= the_qa_flag_form( $id );
 	$out .= '</div>';
-	
+
 	return $out;
 }
 function the_qa_action_links( $id ) {
@@ -266,7 +266,7 @@ function the_qa_flag_form( $id ) {
 	$f .= '<form method="post" action="'.admin_url("admin-ajax.php").'" >';
 	$f .= '<input type="hidden" name="action" value="qa_flag" />';
 	$f .= '<input type="hidden" name="ID" value="'.$id.'" />';
-	
+
 	if ( isset( $qa_general_settings["report_reasons"] ) && '' != trim( $qa_general_settings["report_reasons"] ) ) {
 		$reasons = explode( ",", $qa_general_settings["report_reasons"] );
 		if ( is_array( $reasons ) ) {
@@ -282,7 +282,7 @@ function the_qa_flag_form( $id ) {
 	}
 
 	if ( isset( $qa_general_settings["captcha"] ) && $qa_general_settings["captcha"] && qa_is_captcha_usable() ) {
-		$f .= '<div class="qa_captcha"> 
+		$f .= '<div class="qa_captcha">
 		<label class="description" >' . __('Type the letters you see in the image below:',QA_TEXTDOMAIN ). '</label>
 		<div class="qa_captcha_inner">
 		<img class="captcha_image" id="captcha_'.$id.'" src="' . plugins_url( "/qa/securimage/securimage_show.php" ). '" alt="CAPTCHA Image" />
@@ -298,7 +298,7 @@ function the_qa_flag_form( $id ) {
 	$f .= '<br />';
 	$f .= '<input type="submit" value="'.__('Cancel', QA_TEXTDOMAIN).'" onClick="javascript:document.getElementById(\'qa_flag_form_'.$id.'\').style.display=\'none\';" />';
 	$f .= '</div>';
-	
+
 	return $f;
 }
 
@@ -306,10 +306,10 @@ function the_qa_flag_form( $id ) {
 // Since V1.3.1
 // http://www.phpcaptcha.org/faq/
 function qa_is_captcha_usable() {
-	if ( !function_exists( 'imageftbbox' ) || !function_exists( 'imagecreate' ) 
+	if ( !function_exists( 'imageftbbox' ) || !function_exists( 'imagecreate' )
 		|| !function_exists( 'imagecreatetruecolor' ) || version_compare(PHP_VERSION, '5.2.0') < 0 )
 		return false;
-		
+
 	return true;
 
 }
@@ -355,7 +355,7 @@ function get_question_link( $question_id = 0 ) {
 		$question_id = $post->ID;
 	if ( !$question_id )
 		$question_id = get_the_ID();
-		
+
 	return apply_filters( 'qa_get_question_link', _qa_html( 'a', array( 'class' => 'question-link', 'href' => qa_get_url( 'single', $question_id ) ), $post->post_title ) );
 }
 
@@ -370,13 +370,13 @@ function get_the_question_score( $question_id = 0 ) {
 
 	$score = $up - $down;
 	$score = apply_filters( 'qa_question_score', $score);
-	
+
 	$out  = '';
 	$out .= "<div class='question-score'>";
 	$out .= "<div class='mini-count'>" . number_format_i18n( $score ) . "</div>";
 	$out .= "<div>" . _n( 'vote', 'votes', $score, QA_TEXTDOMAIN ) . "</div>";
 	$out .= "</div>";
-	
+
 	return $out;
 }
 function the_question_score( $question_id = 0 ) {
@@ -441,7 +441,7 @@ function get_the_answer_voting( $answer_id ) {
 	$out .= '<div class="qa-voting-box">';
 	$out .=$buttons['up'];
 	$out .= '<span title="' . __( 'Score', QA_TEXTDOMAIN ) . '">' . number_format_i18n( $up - $down ) . '</span>';
-	$out .= $buttons['down']; 
+	$out .= $buttons['down'];
 
 	$out .= get_the_answer_accepted( $answer_id );
 	$out .= '</div>';
@@ -459,7 +459,7 @@ function get_the_answer_accepted( $answer_id ) {
 	$user_can_accept = get_post_field( 'post_author', $question_id ) == get_current_user_id();
 
 	$is_accepted = get_post_meta( $question_id, '_accepted_answer', true ) == $answer_id;
-	
+
 	$out = '';
 
 	if ( $user_can_accept ) {
@@ -510,16 +510,16 @@ function get_the_question_status( $question_id = 0 ) {
 		$status = 'answered';
 	else
 		$status = 'unanswered';
-		
+
 	$status = apply_filters( 'qa_question_status', $status );
-	
+
 	$out  ='';
 
 	$out .= "<div class='question-status $status'>";
 	$out .=	"<div class='mini-count'>" . number_format_i18n( $count ) . "</div>";
 	$out .=	"<div>" . _n( 'answer', 'answers', $count, QA_TEXTDOMAIN ) . "</div>";
 	$out .= "</div>";
-	
+
 	return $out;
 }
 function the_question_status( $question_id = 0 ) {
@@ -554,7 +554,7 @@ function get_the_question_form() {
 			return;
 
 		$question->tags = wp_get_object_terms( $question->ID, 'question_tag', array( 'fields' => 'names' ) );
-		
+
 		$args = apply_filters( 'qa_category_args', array( 'fields' => 'ids' ) );
 
 		$cats = wp_get_object_terms( $question->ID, 'question_category', $args );
@@ -568,7 +568,7 @@ function get_the_question_form() {
 			'cat' => false
 		);
 	}
-	
+
 	$out = '';
 
 
@@ -588,7 +588,7 @@ function get_the_question_form() {
 	$out .=	'</td>
 		</tr>
 	</table>';
-	
+
 	$use_editor = true;
 	if ( isset( $qa_general_settings["disable_editor"] ) && $qa_general_settings["disable_editor"] )
 		$use_editor = false;
@@ -629,7 +629,7 @@ function get_the_question_form() {
 
 	$out .= get_the_qa_submit_button();
 	$out .= '</form>';
-	
+
 	return $out;
 }
 
@@ -679,9 +679,9 @@ function get_the_answer_list() {
 
 	if ( $accepted_answer && !get_query_var( 'paged' ) )
 		array_unshift( $answers->posts, get_post( $accepted_answer ) );
-	
+
 	$out = '';
-	
+
 	$out .= get_the_qa_pagination( $answers );
 
 	foreach ( $answers->posts as $answer ) {
@@ -690,22 +690,22 @@ function get_the_answer_list() {
 		$out .= '<div id="answer-' . $answer->ID .'" class="answer">';
 		$out .= get_the_answer_voting( $answer->ID );
 		$out .=	'<div class="answer-body">';
-			
+
 		do_action( 'qa_before_answer_content', $answer->ID );
-				
+
 		$out .= '<div class="answer-content">';
-		$out .=	$answer->post_content; 
+		$out .=	$answer->post_content;
 		$out .= '</div>';
-				
+
 		do_action( 'qa_before_answer_meta', $answer->ID );
 
 		$out .=	'<div class="answer-meta">';
 		$out .= get_the_qa_action_links( $answer->ID );
 		$out .= get_the_qa_author_box( $answer->ID );
 		$out .= '</div>';
-				
+
 		do_action( 'qa_after_answer_meta', $answer->ID );
-				
+
 		$out .=	'</div>
 		</div>';
 	}
@@ -713,7 +713,7 @@ function get_the_answer_list() {
 	get_the_qa_pagination( $answers );
 
 	wp_reset_postdata();
-	
+
 	return $out;
 }
 
@@ -723,12 +723,12 @@ function the_answer_list() {
 
 function get_the_answer_form() {
 	global $wp_query, $user_ID, $wp_version, $qa_general_settings;
-	
+
 	$out = '';
-	
+
 	if ( is_qa_page( 'edit' ) ) {
 		$answer = $wp_query->posts[0];
-		
+
 		if ( ($user_ID == 0 && !qa_visitor_can('edit_published_answers', $answer->ID)) && !current_user_can( 'edit_published_answers', $answer->ID ) )
 			return;
 	} else {
@@ -742,8 +742,8 @@ function get_the_answer_form() {
 			'post_content' => ''
 		);
 	}
-	
-	
+
+
 	$out .= '<form id="answer-form" method="post" action="' . qa_get_url( 'archive' ) . '">';
 	$out .= wp_nonce_field( 'qa_answer', "_wpnonce", true , false );
 
@@ -754,20 +754,20 @@ function get_the_answer_form() {
 	$use_editor = true;
 	if ( isset( $qa_general_settings["disable_editor"] ) && $qa_general_settings["disable_editor"] )
 		$use_editor = false;
-	
-	if (version_compare($wp_version, "3.3") >= 0 && $use_editor ) { 
+
+	if (version_compare($wp_version, "3.3") >= 0 && $use_editor ) {
 		$wp_editor_settings = apply_filters( 'qa_answer_editor_settings', array(), $answer->ID );
 		$out .=  '<p>';
-		
+
 		ob_start();
 		wp_editor(  $answer->post_content, 'answer', $wp_editor_settings);
 		$out .= ob_get_contents();
 		ob_end_clean();
-		
+
 		$out .= '</p>';
 	} else
 		$out .= '<p><textarea name="answer" class="wp32">' .esc_textarea( $answer->post_content ) . '</textarea></p>';
-		
+
 	$out .= get_the_qa_submit_button();
 	$out .= '</form>';
 
@@ -780,7 +780,7 @@ function the_answer_form() {
 
 function get_the_qa_submit_button() {
 	global $qa_general_settings;
-	if ( is_user_logged_in() ||( is_array($qa_general_settings) && isset( $qa_general_settings["method"] ) && 'assign' == $qa_general_settings["method"] 
+	if ( is_user_logged_in() ||( is_array($qa_general_settings) && isset( $qa_general_settings["method"] ) && 'assign' == $qa_general_settings["method"]
 		&& qa_visitor_can( 'immediately_publish_questions' ) ) ) {
 		$button = __( 'Submit', QA_TEXTDOMAIN );
 	} elseif ( get_option( 'users_can_register' ) ) {
@@ -798,7 +798,7 @@ function the_qa_submit_button() {
 
 function qa_visitor_can($capability, $post_id = null) {
 	$role = get_role('visitor');
-	
+
 	if ($role && is_object( $role ) && $role->has_cap($capability, $post_id)) {
 		return true;
 	}

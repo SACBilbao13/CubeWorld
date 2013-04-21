@@ -20,16 +20,16 @@ class QA_Core_Admin extends QA_Core {
 	function QA_Core_Admin() {
 		// Settings page ID
 		$this->page = 'question_page_qa_settings';
-	
+
 		$this->capability_map = array(
-			'read_questions'             	=> __( 'View questions', QA_TEXTDOMAIN ),
-			'publish_questions'          	=> __( 'Ask questions', QA_TEXTDOMAIN ),
-			'immediately_publish_questions'	=> __( 'Immediately publish questions and answers (Otherwise they will be saved as pending)', QA_TEXTDOMAIN ),
-			'edit_published_questions'   	=> __( 'Edit own questions', QA_TEXTDOMAIN ),
-			'delete_published_questions' 	=> __( 'Delete own questions', QA_TEXTDOMAIN ),
-			'edit_others_questions'      	=> __( 'Edit others\' questions', QA_TEXTDOMAIN ),
-			'delete_others_questions'    	=> __( 'Delete others\' questions', QA_TEXTDOMAIN ),
-			'subscribe_to_new_questions' 	=> __( 'Subscribe to new questions', QA_TEXTDOMAIN ),
+			'read_questions'             	=> __( 'View missions', QA_TEXTDOMAIN ),
+			'publish_questions'          	=> __( 'Ask missions', QA_TEXTDOMAIN ),
+			'immediately_publish_questions'	=> __( 'Immediately publish missions and answers (Otherwise they will be saved as pending)', QA_TEXTDOMAIN ),
+			'edit_published_questions'   	=> __( 'Edit own missions', QA_TEXTDOMAIN ),
+			'delete_published_questions' 	=> __( 'Delete own missions', QA_TEXTDOMAIN ),
+			'edit_others_questions'      	=> __( 'Edit others\' missions', QA_TEXTDOMAIN ),
+			'delete_others_questions'    	=> __( 'Delete others\' missions', QA_TEXTDOMAIN ),
+			'subscribe_to_new_questions' 	=> __( 'Subscribe to new missions', QA_TEXTDOMAIN ),
 
 			'read_answers'               	=> __( 'View answers', QA_TEXTDOMAIN ),
 			'publish_answers'            	=> __( 'Add answers', QA_TEXTDOMAIN ),
@@ -37,20 +37,20 @@ class QA_Core_Admin extends QA_Core {
 			'delete_published_answers'   	=> __( 'Delete own answers', QA_TEXTDOMAIN ),
 			'edit_others_answers'        	=> __( 'Edit others\' answers', QA_TEXTDOMAIN ),
 			'delete_others_answers'      	=> __( 'Delete others\' answers', QA_TEXTDOMAIN ),
-			
-			'flag_questions'				=> __( 'Report questions and answers', QA_TEXTDOMAIN ),
+
+			'flag_questions'				=> __( 'Report missions and answers', QA_TEXTDOMAIN ),
 		);
-		
+
 		$this->init();
 	}
-	
+
 	/**
 	 * Intiate hooks.
 	 *
 	 * @return void
 	 */
 	function init() {
-	
+
 		qa_update_14();
 
 		register_activation_hook( QA_PLUGIN_DIR . 'qa.php', array( &$this, 'init_defaults' ) );
@@ -60,28 +60,28 @@ class QA_Core_Admin extends QA_Core {
 		add_action( 'wp_ajax_qa-get-caps', array( &$this, 'ajax_get_caps' ) );
 		add_action( 'wp_ajax_qa-save', array( &$this, 'ajax_save' ) );
 		add_action( 'wp_ajax_qa-estimate', array( &$this, 'estimate' ) );
-		
+
 		add_action( 'wp_ajax_nopriv_ajax-tag-search', array( &$this, 'ajax_tag_search' ) );
-		
-		add_action( 'show_user_profile', array( &$this, 'show_user_profile' ) ); 
+
+		add_action( 'show_user_profile', array( &$this, 'show_user_profile' ) );
 		add_action( 'edit_user_profile', array( &$this, 'show_user_profile' ) );
 		add_action( 'profile_update', array( &$this, 'profile_update' ) );
 		add_filter( 'plugin_row_meta', array(&$this,'set_plugin_meta'), 10, 2 );// Add settings link on plugin page
 
-		
+
 		add_filter( 'user_has_cap', array(&$this, 'user_has_cap'), 10, 3);
-		
+
 		$this->plugin_name = "qa";
-		
+
 		add_action( 'admin_notices', array($this, 'notice_settings') );			// Notice admin to make some settings
 		add_action( 'right_now_content_table_end', array($this, 'add_question_counts') );
-		
+
 		// Since V 1.3.1
 		add_action( 'add_meta_boxes', array( &$this, 'add_metabox' ), 1 );
 		add_action( 'save_post', array( &$this, 'save_metabox' ) );
 		add_filter( 'manage_question_posts_columns', array( &$this, 'add_column') );
 		add_filter( 'manage_answer_posts_columns', array( &$this, 'add_column') );
-		add_action( 'manage_posts_custom_column', array( &$this, 'show_column') ); 
+		add_action( 'manage_posts_custom_column', array( &$this, 'show_column') );
 
 	}
 
@@ -94,12 +94,12 @@ class QA_Core_Admin extends QA_Core {
 		// Display only for reported q & a
 		if ( !is_object( $post ) || !$post->ID )
 			return;
-			
+
 		$result = $wpdb->get_row( "SELECT * FROM " . $wpdb->postmeta . " WHERE post_id=". $post->ID . " AND meta_key='_qa_report' ");
-		
+
 		if ( $result != null ) {
 			if ( 'question' == $post->post_type )
-				add_meta_box( 
+				add_meta_box(
 				'reported_question',
 				__( 'This Question is Reported', QA_TEXTDOMAIN ),
 				array( &$this, 'print_metabox' ),
@@ -108,7 +108,7 @@ class QA_Core_Admin extends QA_Core {
 				'high'
 				);
 			else if ( 'answer' == $post->post_type )
-				add_meta_box( 
+				add_meta_box(
 				'reported_answer',
 				__( 'This Answer is Reported', QA_TEXTDOMAIN ),
 				array( &$this, 'print_metabox' ),
@@ -117,19 +117,19 @@ class QA_Core_Admin extends QA_Core {
 				'high'
 				);
 		}
-		
+
 	}
-	
+
 	/**
 	 * Html codes for report metabox
 	 * Since v1.3.1
 	 */
 	function print_metabox() {
 		global $post;
-		
+
 		if ( !is_object( $post ) || !$post->ID )
 			return;
-			
+
 		$meta = get_post_meta( $post->ID, '_qa_report', true );
 		// Use nonce for verification
 		wp_nonce_field( plugin_basename( __FILE__ ), 'qa_nonce' );
@@ -143,7 +143,7 @@ class QA_Core_Admin extends QA_Core {
 			echo $meta["count"];
 		echo '</span>';
 		echo '<div class="clear"></div>';
-		
+
 		echo '<label>';
 		_e( 'Last reported by:', QA_TEXTDOMAIN );
 		echo '</label> ';
@@ -152,7 +152,7 @@ class QA_Core_Admin extends QA_Core {
 			echo $meta["user"];
 		echo '</span>';
 		echo '<div class="clear"></div>';
-	
+
 		echo '<label>';
 		_e( 'Last report reason:', QA_TEXTDOMAIN );
 		echo '</label> ';
@@ -161,7 +161,7 @@ class QA_Core_Admin extends QA_Core {
 			echo stripslashes( $meta["reason"] );
 		echo '</span>';
 		echo '<div class="clear"></div>';
-		
+
 		echo '<label>';
 		_e( 'Delete report:', QA_TEXTDOMAIN );
 		echo '</label> ';
@@ -170,7 +170,7 @@ class QA_Core_Admin extends QA_Core {
 		echo '</span>';
 		echo '<div class="clear"></div>';
 	}
-	
+
 	/**
 	 * Deletes a report
 	 * Since v1.3.1
@@ -183,9 +183,9 @@ class QA_Core_Admin extends QA_Core {
 
 		if ( 'question' != $post->post_type && 'answer' != $post->post_type )
 			return;
-		// verify if this is an auto save routine. 
+		// verify if this is an auto save routine.
 		// If it is our form has not been submitted, so we dont want to do anything
-		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
+		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
 			return;
 
 		if ( !wp_verify_nonce( $_POST['qa_nonce'], plugin_basename( __FILE__ ) ) )
@@ -200,7 +200,7 @@ class QA_Core_Admin extends QA_Core {
 			if ( !current_user_can( 'edit_others_answers', $post->ID ) )
 				return;
 		}
-		
+
 		if ( isset( $_POST["qa_delete_report"] ) && $_POST["qa_delete_report"] )
 			delete_post_meta( $post->ID, '_qa_report' );
 	}
@@ -221,10 +221,10 @@ class QA_Core_Admin extends QA_Core {
 	function show_column( $name ) {
 		if ( 'qa-reported' != $name )
 			return;
-			
+
 		global $post;
 		$meta = get_post_meta( $post->ID, '_qa_report', true );
-		
+
 		if ( $meta )
 			echo '<span style="color:red;font-weight:bold">' . __('Yes', QA_TEXTDOMAIN ) . '</span>';
 		else
@@ -234,7 +234,7 @@ class QA_Core_Admin extends QA_Core {
 	/**
 	 * Add Question status counts in admin Right Now Dashboard box
 	 * http://codex.wordpress.org/Plugin_API/Action_Reference/right_now_content_table_end
-	 */	
+	 */
 	function add_question_counts() {
         if ( !post_type_exists( 'question' ) ) {
              return;
@@ -264,8 +264,8 @@ class QA_Core_Admin extends QA_Core {
 
             echo '</tr>';
         }
-		
-		
+
+
 		$num_posts = wp_count_posts( 'answer' );
         $num = number_format_i18n( $num_posts->publish );
         $text = _n( 'Answer Published', 'Answers Published', intval( $num_posts->publish ) );
@@ -290,10 +290,10 @@ class QA_Core_Admin extends QA_Core {
 
             echo '</tr>';
         }
-		
+
 		global $wpdb;
 		$count = $wpdb->get_var( " SELECT COUNT(*) FROM $wpdb->postmeta WHERE meta_key='_qa_report' " );
-		
+
 		if ( $count > 0 ) {
             $num = number_format_i18n( $count );
             $text = _n( 'Q&A Reported', 'Q&A Reported', intval( $count ) );
@@ -308,46 +308,46 @@ class QA_Core_Admin extends QA_Core {
         }
 
 	}
-	
+
 	/**
 	 * Warn admin to make some settings
-	 */	
+	 */
 	function notice_settings () {
 		if ( !current_user_can( 'manage_options' ) )
 			return;
-			
+
 		global $qa_general_settings;
 		$screen = get_current_screen();
 		// This is admin side, so one additional query can be accepted for the moment.
 		// TODO: Move this into general settings array
 		$no_visit = get_option( "qa_no_visit" );
-		
+
 		if ( !$no_visit && $screen->id != $this->page ) {
 			/* translators: %s means settings here */
-			echo '<div class="updated fade"><p>' . 
+			echo '<div class="updated fade"><p>' .
 				sprintf(__("<b>[Q&A]</b> It looks like you have just installed or upgraded Q&A. You may want to adjust some %s. <b>If you are upgrading, please note that page layout handling has been changed.</b>.", QA_TEXTDOMAIN),"<a href='".admin_url('edit.php?post_type=question&page=qa_settings')."'>".__("settings",QA_TEXTDOMAIN)."</a>") .
 				'</p></div>';
 		}
 		// If admin visits setting page, remove this annoying message :P
 		if ( $screen->id == $this->page && !$no_visit )
 			update_option( "qa_no_visit" , "true" );
-			
-		// Warn admin is visitor registration is required, but registration is closed.	
+
+		// Warn admin is visitor registration is required, but registration is closed.
 		if ( 'assign' != @$qa_general_settings["method"] && !get_option( 'users_can_register' ) )
 			/* translators: %s means settings here */
-			echo '<div class="error fade"><p>' . 
+			echo '<div class="error fade"><p>' .
 				sprintf(__("<b>[Q&A]</b> <i>After Visitor Submits a Question</i> setting requires registration of the visitor, but your website is closed to registrations. You may consider to fix this using plugin %s or Wordpress settings.", QA_TEXTDOMAIN),"<a href='".admin_url('edit.php?post_type=question&page=qa_settings')."'>".__("settings",QA_TEXTDOMAIN)."</a>") .
 				'</p></div>';
 
-		// Warn admin is visitor role cannot be found.	
+		// Warn admin is visitor role cannot be found.
 		if ( !get_role( 'visitor' ) )
-			echo '<div class="error fade"><p>' . 
+			echo '<div class="error fade"><p>' .
 				__("<b>[Q&A]</b> Visitor role cannot be found. Try to deactivate and reactivate the plugin, if you continue to see this message, consult our Help and Support.", QA_TEXTDOMAIN) .
 				'</p></div>';
-				
-		// Warn admin in case of default permalink.	
+
+		// Warn admin in case of default permalink.
 		if ( !get_option( 'permalink_structure' ) )
-			echo '<div class="error fade"><p>' . 
+			echo '<div class="error fade"><p>' .
 				__("<b>[Q&A]</b> Plugin will not function correctly with default permalink structure. You need to use a pretty permalink structure.", QA_TEXTDOMAIN) .
 				'</p></div>';
 
@@ -369,7 +369,7 @@ class QA_Core_Admin extends QA_Core {
 		return $links;
 	}
 
-	
+
 	/**
 	 *	Get saved postbox states
 	 */
@@ -380,10 +380,10 @@ class QA_Core_Admin extends QA_Core {
 			return "";
 	}
 
-	
+
 	function ajax_tag_search() {
 		global $wpdb;
-		
+
 		if ( isset( $_GET['tax'] ) ) {
 			$taxonomy = sanitize_key( $_GET['tax'] );
 			$tax = get_taxonomy( $taxonomy );
@@ -392,9 +392,9 @@ class QA_Core_Admin extends QA_Core {
 		} else {
 			die('0');
 		}
-	
+
 		$s = stripslashes( $_GET['q'] );
-	
+
 		if ( false !== strpos( $s, ',' ) ) {
 			$s = explode( ',', $s );
 			$s = $s[count( $s ) - 1];
@@ -402,7 +402,7 @@ class QA_Core_Admin extends QA_Core {
 		$s = trim( $s );
 		if ( strlen( $s ) < 2 )
 			die; // require 2 chars for matching
-	
+
 		$results = $wpdb->get_col( $wpdb->prepare( "SELECT t.name FROM $wpdb->term_taxonomy AS tt INNER JOIN $wpdb->terms AS t ON tt.term_id = t.term_id WHERE tt.taxonomy = %s AND t.name LIKE (%s)", $taxonomy, '%' . like_escape( $s ) . '%' ) );
 		echo join( $results, "\n" );
 		die;
@@ -423,10 +423,10 @@ class QA_Core_Admin extends QA_Core {
 	 */
 	function init_defaults() {
 		global $wp_roles;
-		
+
 		$version = get_option('qa_installed_version');
-		
-		
+
+
 		// Version is current and no problem with visitor role; do nothing
 		$visitor_role = get_role( 'visitor' );
 		if ( $version == QA_VERSION && $visitor_role )
@@ -435,12 +435,12 @@ class QA_Core_Admin extends QA_Core {
 		// Check if we have some options
 		if ( !$options = get_option( QA_OPTIONS_NAME ) )
 			$options = array();
-		
-		// Define visitor role if it is not already defined		
+
+		// Define visitor role if it is not already defined
 		if ( !$visitor_role )
 			add_role('visitor', 'QA Visitor', array('read_questions' => true, 'publish_questions' => true,
 					 'immediately_publish_questions' => true, 'read_answers' => true, 'publish_answers' => true) );
-					 
+
 		// Default roles and caps
 		$droles = array( 'author', 'contributor', 'subscriber', 'editor', 'visitor' );
 		$dcaps = array( 'read_questions', 'read_answers', 'publish_questions', 'immediately_publish_questions', 'publish_answers' );
@@ -458,7 +458,7 @@ class QA_Core_Admin extends QA_Core {
 				}
 			}
 		}
-		
+
 		// If an upgrade, set immediately_publish_questions for those who can publish questions
 		if ( $version != QA_VERSION ) {
 			foreach ( $droles as $drole ) {
@@ -467,7 +467,7 @@ class QA_Core_Admin extends QA_Core {
 					$wp_roles->add_cap( $drole, 'immediately_publish_questions' );
 			}
 		}
-	
+
 		update_option( 'qa_installed_version', QA_VERSION);
 	}
 
@@ -526,30 +526,30 @@ class QA_Core_Admin extends QA_Core {
 		}
 		do_action('handle_module_admin_requests');
 	}
-	
+
 	/**
 	 * Display notification settings in user profile
 	 */
 	function show_user_profile() {
 		if (!current_user_can('subscribe_to_new_questions'))
 			return;
-		
+
 		if ( file_exists( QA_PLUGIN_DIR . "ui-admin/user_profile.php" ) )
 			include QA_PLUGIN_DIR . "ui-admin/user_profile.php";
 		else
 			echo "<p>Rendering of admin template " . QA_PLUGIN_DIR . "ui-admin/user_profile.php failed</p>";
 	}
-	
+
 	/**
 	 * Save notification settings when the user profile is updated
 	 */
 	function profile_update() {
 		if (!current_user_can('subscribe_to_new_questions'))
 			return;
-		
+
 		global $wpdb;
 		$user_id =  $_REQUEST['user_id'];
-		
+
 		if (isset($_POST['qa_notification'])) {
 			update_usermeta($user_id, 'qa_notification', $_POST['qa_notification']);
 		} else {
@@ -597,9 +597,9 @@ class QA_Core_Admin extends QA_Core {
 
 		// add/remove capabilities
 		global $wp_roles;
-		
+
 		$qa_capabilities_set = get_option('qa_capabilties_set', array());
-		
+
 		$role = $_POST['roles'];
 
 		$all_caps = array_keys( $this->capability_map );
@@ -609,7 +609,7 @@ class QA_Core_Admin extends QA_Core {
 			$to_add = array();
 		}
 		$to_remove = array_diff( $all_caps, $to_add );
-		
+
 		foreach ( $to_remove as $capability ) {
 			$wp_roles->remove_cap( $role, $capability );
 		}
@@ -617,7 +617,7 @@ class QA_Core_Admin extends QA_Core {
 		foreach ( $to_add as $capability ) {
 			$wp_roles->add_cap( $role, $capability );
 		}
-		
+
 		if ( qa_is_captcha_usable() && isset( $_POST['captcha'] ) )
 			$captcha = true;
 		else
@@ -649,51 +649,51 @@ class QA_Core_Admin extends QA_Core {
 				'report_email'		=> trim( @$_POST['report_email'] )
 			)
 		);
-		
+
 		$qa_capabilities_set[$role] = true;
-		
+
 		update_option( 'qa_capabilties_set', array_unique( $qa_capabilities_set ));
 		update_option( QA_OPTIONS_NAME, $options );
-		
+
 		update_option( 'qa_email_notification_subject', $_POST['qa_email_notification_subject'] );
 		update_option( 'qa_email_notification_content', $_POST['qa_email_notification_content'] );
 
 		die(1);
 	}
-	
+
 	/**
 	 * Estimate css rules
 	 * @since 1.4
 	 * @return json_encoded result
 	 */
 	function estimate() {
-	
+
 		if ( !current_user_can( 'manage_options' ) )
 			die(json_encode(array( 'error'=>esc_js(__('You are not authorised to do this', QA_TEXTDOMAIN)))));
-			
+
 		$c_theme = get_template(); // Current theme
-		
+
 		if ( strpos( qa_supported_themes(), $c_theme ) !== false )
 			die(json_encode(array( 'error'=>sprintf( __('Your current theme %s is already supported by Q&A. No additional css rules are necessary.', QA_TEXTDOMAIN), $c_theme ))));
 
 		$css = '';
 		$changed = false;
 		global $qa_general_settings;
-		
+
 		if ( !isset( $_POST['page_layout'] ) || !isset( $_POST['page_width'] ) || !isset( $_POST['content_width'] ) || !isset( $_POST['sidebar_width'] ) || !isset( $_POST['content_alignment'] ) )
 			die(json_encode(array( 'error'=>esc_js(__('At least One of the variables is missing', QA_TEXTDOMAIN)))));
-		
+
 		$qa_general_settings['page_layout'] 		= $page_layout			= $_POST['page_layout'];
 		$qa_general_settings['page_width'] 			= $page_width			= $_POST['page_width'];
 		$qa_general_settings['content_width'] 		= $content_width		= $_POST['content_width'];
 		$qa_general_settings['sidebar_width'] 		= $sidebar_width		= $_POST['sidebar_width'];
 		$qa_general_settings['content_alignment'] 	= $content_alignment	= $_POST['content_alignment'];
-		
+
 		// Post variables are right, so save them.
-		update_option( QA_OPTIONS_NAME, $qa_general_settings );	
+		update_option( QA_OPTIONS_NAME, $qa_general_settings );
 
 		$right_margin = $left_margin = 0;
-			
+
 		switch( $page_layout ) {
 			case 'content-sidebar':
 
@@ -703,12 +703,12 @@ class QA_Core_Admin extends QA_Core {
 					case 'right':	$left_margin 	= $page_width - $content_width - $sidebar_width;  break;
 					default: 		$right_margin	= $left_margin = (int)(($page_width - $content_width - $sidebar_width ) /2); break;
 				}
-				
+
 				$css .= '#qa-page-wrapper{float:left !important; width:100% !important;margin-right:-'.($sidebar_width+1).'px !important;} ';
 				$css .= '#qa-content-wrapper{margin:0 '.$right_margin.'px 0 '.$left_margin.'px !important;}';
-				
+
 			break;
-			
+
 			case 'sidebar-content':
 				switch ( $content_alignment ) {
 					case 'center':	$left_margin = (int)(($page_width - $sidebar_width - $content_width) /2) + $sidebar_width; break;
@@ -719,7 +719,7 @@ class QA_Core_Admin extends QA_Core {
 				$css .= '#qa-page-wrapper{float:right !important; width:100% !important;margin-left:-'.($sidebar_width+1).'px !important;} ';
 				$css .= '#qa-content-wrapper{margin:0 '.$right_margin.'px 0 '.$left_margin.'px !important;}';
 			break;
-			
+
 			case 'content':
 				switch ( $content_alignment ) {
 					case 'center':	$right_margin	= $left_margin = (int)(($page_width - $content_width) /2); break;
@@ -730,10 +730,10 @@ class QA_Core_Admin extends QA_Core {
 				$css .= '#qa-page-wrapper{width:100% !important;} ';
 				$css .= '#qa-content-wrapper{margin:0 '.$right_margin.'px 0 '.$left_margin.'px !important;}';
 			break;
-		
+
 			default:	die(json_encode(array( 'error'=>esc_js(__('Page layout is not selected', QA_TEXTDOMAIN))))); break;
 		}
-		
+
 		if ( $css ) {
 			$qa_general_settings['additional_css'] = $css;
 			if ( update_option( QA_OPTIONS_NAME, $qa_general_settings ) )
@@ -745,7 +745,7 @@ class QA_Core_Admin extends QA_Core {
 		die(json_encode(array( 'error'=>esc_js(__('Page layout is not selected', QA_TEXTDOMAIN)))));
 	}
 
-	
+
 	/**
 	 * Renders an admin section of display code.
 	 *
@@ -761,21 +761,21 @@ class QA_Core_Admin extends QA_Core {
 		else
 			echo "<p>Rendering of admin template " . QA_PLUGIN_DIR . "ui-admin/{$name}.php failed</p>";
 	}
-	
+
 	function user_has_cap($allcaps, $caps = null, $args = null) {
 		global $current_user, $blog_id, $post;
-		
+
 		$qa_capabilities_set = get_option('qa_capabilties_set', array());
-		
+
 		$capable = false;
-		
+
 		$qa_cap_set = false;
 		foreach ($current_user->roles as $role) {
 			if (isset($qa_capabilities_set[$role])) {
 				$qa_cap_set = true;
 			}
 		}
-		
+
 		if (!$qa_cap_set && preg_match('/(_question|_questions|_answer|_answers)/i', join($caps, ',')) > 0) {
 			if (in_array('administrator', $current_user->roles)) {
 				foreach ($caps as $cap) {
@@ -783,10 +783,10 @@ class QA_Core_Admin extends QA_Core {
 				}
 				return $allcaps;
 			}
-			
+
 			foreach ($caps as $cap) {
 				$capable = false;
-				
+
 				switch ($cap) {
 					case 'read_questions':
 					case 'read_answers':
@@ -806,7 +806,7 @@ class QA_Core_Admin extends QA_Core {
 						}
 						break;
 				}
-				
+
 				if ($capable) {
 					$allcaps[$cap] = 1;
 				}
