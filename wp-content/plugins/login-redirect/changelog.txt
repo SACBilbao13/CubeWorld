@@ -1,0 +1,29 @@
+Plugin Name: Login Redirect
+Author: Andrew Billits
+
+Change Log:
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+1.0.3 - 02/02/2011
+----------------------------------------------------------------------
+- New feature: Singlesite support.
+- New feature: ability to configure plugin on a per site basis on
+Multisite installs.
+
+1.0.2 - 01/05/2011
+----------------------------------------------------------------------
+- WP 3.1+ compatibility.
+- Add option to network settings.
+- Use PHP redirect instead of JavaScript.
+- Internationalization.
+
+1.0.1 - 09/21/2009
+----------------------------------------------------------------------
+- No longer redirects on password reset pages.
+
+1.0.0 - 11/17/2008
+----------------------------------------------------------------------
+- Initial Release.
+
+137717-1365681573
