@@ -41,10 +41,9 @@ get_header(); ?>
 						{
 							echo '<li>';
 
-							echo '<a href="'.str_replace('/index.php', 'http://www.cubesat.org/index.php', $e->href).'" title="'.trim($e->innertext).'">'.$i.". - ".trim($e->innertext).'</a>';
+							echo '<a href="'.str_replace('/index.php', 'http://www.cubesat.org/index.php', $e->href).'" title="'.trim($e->innertext).'">'.trim($e->innertext).'</a>';
 
 							echo '</li>';
-							$i++;
 						}
 						echo '</ul>';
 						echo '<a href="http://www.cubesat.org/index.php/missions/past-launches" target="_blank" title="More">More</a>';
