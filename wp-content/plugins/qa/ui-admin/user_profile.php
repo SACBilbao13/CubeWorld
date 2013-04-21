@@ -6,7 +6,7 @@ global $user_id;
     <tbody>
         <tr>
             <th>
-                <label for="qa-notification"><?php _e('Get e-mail notifications about new questions', QA_TEXTDOMAIN); ?></label>
+                <label for="qa-notification"><?php _e('Get e-mail notifications about new missions', QA_TEXTDOMAIN); ?></label>
             </th>
             <td><input type="checkbox" id="qa-notification" name="qa_notification" <?php echo (get_user_meta($user_id, "qa_notification", true) == 1)?'checked="checked"':''; ?> value="1" /></td>
         </tr>

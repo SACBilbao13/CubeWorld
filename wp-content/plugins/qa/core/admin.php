@@ -242,7 +242,7 @@ class QA_Core_Admin extends QA_Core {
 
         $num_posts = wp_count_posts( 'question' );
         $num = number_format_i18n( $num_posts->publish );
-        $text = _n( 'Question Published', 'Questions Published', intval( $num_posts->publish ) );
+        $text = _n( 'Mission Published', 'Missions Published', intval( $num_posts->publish ) );
         if ( current_user_can( 'edit_posts' ) ) {
             $num = "<a href='edit.php?post_type=question'>$num</a>";
             $text = "<a class='approved' href='edit.php?post_type=question'>$text</a>";
@@ -254,7 +254,7 @@ class QA_Core_Admin extends QA_Core {
 
         if ( $num_posts->pending > 0 ) {
             $num = number_format_i18n( $num_posts->pending );
-            $text = _n( 'Question Pending', 'Questions Pending', intval( $num_posts->pending ) );
+            $text = _n( 'Mission Pending', 'Missions Pending', intval( $num_posts->pending ) );
             if ( current_user_can( 'edit_posts' ) ) {
                 $num = "<a href='edit.php?post_status=pending&post_type=question'>$num</a>";
                 $text = "<a class='waiting' href='edit.php?post_status=pending&post_type=question'>$text</a>";
@@ -336,7 +336,7 @@ class QA_Core_Admin extends QA_Core {
 		if ( 'assign' != @$qa_general_settings["method"] && !get_option( 'users_can_register' ) )
 			/* translators: %s means settings here */
 			echo '<div class="error fade"><p>' .
-				sprintf(__("<b>[Q&A]</b> <i>After Visitor Submits a Question</i> setting requires registration of the visitor, but your website is closed to registrations. You may consider to fix this using plugin %s or Wordpress settings.", QA_TEXTDOMAIN),"<a href='".admin_url('edit.php?post_type=question&page=qa_settings')."'>".__("settings",QA_TEXTDOMAIN)."</a>") .
+				sprintf(__("<b>[Q&A]</b> <i>After Visitor Submits a Mission</i> setting requires registration of the visitor, but your website is closed to registrations. You may consider to fix this using plugin %s or Wordpress settings.", QA_TEXTDOMAIN),"<a href='".admin_url('edit.php?post_type=question&page=qa_settings')."'>".__("settings",QA_TEXTDOMAIN)."</a>") .
 				'</p></div>';
 
 		// Warn admin is visitor role cannot be found.

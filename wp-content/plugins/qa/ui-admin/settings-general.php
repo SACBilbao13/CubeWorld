@@ -64,22 +64,22 @@ function qa_settings_field_layout() {
 	<?php screen_icon('options-general'); ?>
 
 	<h2><?php _e( 'Q&A Settings', QA_TEXTDOMAIN ); ?></h2>
-	
+
 	<br />
 	<span class="description"><?php _e('This page uses ajax. Settings are saved without a page refresh.', QA_TEXTDOMAIN) ?></span>
-	
+
 	<div id="poststuff" class="metabox-holder">
-	
+
 	<form action="" method="post" class="qa-general">
 
 	<div class="postbox <?php echo $this->postbox_classes('qa_display') ?>" id="qa_display">
 	<h3 class='hndle'><span><?php _e('Theme Adaptation Settings', QA_TEXTDOMAIN) ?></span></h3>
-	
-	
+
+
 	<div class="inside">
 
 		<table class="form-table">
-		
+
 			<tr>
 			<td colspan="2">
 			<span class="description">
@@ -87,7 +87,7 @@ function qa_settings_field_layout() {
 			</span>
 			</td>
 			</tr>
-			
+
 			<tr>
 				<th>
 					<label for="page_layout"><?php _e( 'Page Layout', QA_TEXTDOMAIN ) ?></label>
@@ -99,7 +99,7 @@ function qa_settings_field_layout() {
 					</span>
 				</td>
 			</tr>
-		
+
 			<tr>
 				<th>
 					<label for="page_width"><?php _e( 'Usable Page Width (px)', QA_TEXTDOMAIN ) ?></label>
@@ -125,7 +125,7 @@ function qa_settings_field_layout() {
 					</span>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<th>
 					<label for="content_width"><?php _e( 'Alignment of Q&A Content', QA_TEXTDOMAIN ) ?></label>
@@ -142,7 +142,7 @@ function qa_settings_field_layout() {
 					</span>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<th>
 					<label for="sidebar_width"><?php _e( 'Sidebar Width (px)', QA_TEXTDOMAIN ) ?></label>
@@ -155,7 +155,7 @@ function qa_settings_field_layout() {
 					</span>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<th>
 					<label for="auto_css_button"><img class="ajax-loader" src="<?php echo QA_PLUGIN_URL . 'ui-admin/images/ajax-loader.gif'; ?>" /></label>
@@ -224,7 +224,7 @@ function qa_settings_field_layout() {
 							else {
 								alert('<?php echo esc_js(__('A connection error occurred. Please try again.',QA_TEXTDOMAIN)) ?>');
 							}
-						},'json');	
+						},'json');
 					}
 				});
 			});
@@ -241,7 +241,7 @@ function qa_settings_field_layout() {
 					</span>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<th>
 					<label for="search_input_width"><?php _e( 'Search Input Field Width (px)', QA_TEXTDOMAIN ) ?></label>
@@ -267,27 +267,27 @@ function qa_settings_field_layout() {
 		<img class="ajax-loader" src="<?php echo QA_PLUGIN_URL . 'ui-admin/images/ajax-loader.gif'; ?>" />
 		<span style="display:none;font-weight:bold;color:darkgreen" class="qa_settings_saved"><?php _e( 'Settings saved', QA_TEXTDOMAIN ); ?></span>
 	</p>
-		
+
 	<div class="postbox <?php echo $this->postbox_classes('qa_display') ?>" id="qa_display">
 	<h3 class='hndle'><span><?php _e('Other Display Settings', QA_TEXTDOMAIN) ?></span></h3>
-	
-	
+
+
 	<div class="inside">
 
 		<table class="form-table">
 			<tr>
 				<th>
-					<label for="questions_per_page"><?php _e( 'Questions Per Page', QA_TEXTDOMAIN ) ?></label>
+					<label for="questions_per_page"><?php _e( 'Missions Per Page', QA_TEXTDOMAIN ) ?></label>
 				</th>
 				<td>
 					<input style="width:100px" name="questions_per_page" value="<?php echo @$options['questions_per_page']; ?>" />&nbsp;&nbsp;&nbsp;<span class="description"><?php echo __( 'If left empty, WP setting will be used: ', QA_TEXTDOMAIN ) . get_option('posts_per_page'); ?></span>
 					<br />
 					<span class="description">
-					<?php printf( __( 'IMPORTANT: Questions Per Page cannot be less than Wordpress %s setting, because of WP limitations. If you set it like that Wordpress setting will be used instead.', QA_TEXTDOMAIN ), '<a href="'.admin_url('options-reading.php'). '">'. __('Blog pages show at most', QA_TEXTDOMAIN )  . '</a>' ); ?>
+					<?php printf( __( 'IMPORTANT: Missions Per Page cannot be less than Wordpress %s setting, because of WP limitations. If you set it like that Wordpress setting will be used instead.', QA_TEXTDOMAIN ), '<a href="'.admin_url('options-reading.php'). '">'. __('Blog pages show at most', QA_TEXTDOMAIN )  . '</a>' ); ?>
 					</span>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<th>
 					<label for="answers_per_page"><?php _e( 'Answers Per Page', QA_TEXTDOMAIN ) ?></label>
@@ -296,7 +296,7 @@ function qa_settings_field_layout() {
 					<input style="width:100px" name="answers_per_page" value="<?php echo @$options['answers_per_page']; ?>" />&nbsp;&nbsp;&nbsp;<span class="description"><?php _e( 'If left empty: 20', QA_TEXTDOMAIN ); ?></span>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<th>
 					<label for="disable_editor"><?php _e( 'Disable WP Editor', QA_TEXTDOMAIN ) ?></label>
@@ -305,11 +305,11 @@ function qa_settings_field_layout() {
 					<input type="checkbox" name="disable_editor" <?php if ( @$options["disable_editor"] ) echo "checked='checked'"; ?> />
 					&nbsp;&nbsp;&nbsp;
 					<span class="description">
-					<?php _e( 'If you are having issues with Buddypress or if you don\'t want submissions to be formatted, check this checkbox. Then, textarea will be used for question and answer forms instead of the WP editor.', QA_TEXTDOMAIN ); ?>
+					<?php _e( 'If you are having issues with Buddypress or if you don\'t want submissions to be formatted, check this checkbox. Then, textarea will be used for mission and answer forms instead of the WP editor.', QA_TEXTDOMAIN ); ?>
 					</span>
 				</td>
 			</tr>
-			
+
 		</table>
 		</div>
 		</div>
@@ -322,15 +322,15 @@ function qa_settings_field_layout() {
 		<img class="ajax-loader" src="<?php echo QA_PLUGIN_URL . 'ui-admin/images/ajax-loader.gif'; ?>" />
 		<span style="display:none;font-weight:bold;color:darkgreen" class="qa_settings_saved"><?php _e( 'Settings saved', QA_TEXTDOMAIN ); ?></span>
 	</p>
-	
+
 	<div class="postbox <?php echo $this->postbox_classes('qa_access') ?>" id="qa_access">
 	<h3 class='hndle'><span><?php _e('Accessibility Settings', QA_TEXTDOMAIN) ?></span></h3>
-	
-	
+
+
 	<div class="inside">
 
 		<table class="form-table">
-			
+
 			<tr>
 				<th>
 					<label for="roles"><?php _e( 'Assign Capabilities', QA_TEXTDOMAIN ) ?></label>
@@ -355,13 +355,13 @@ function qa_settings_field_layout() {
 					</div>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<th>
-					<label for="default_category"><?php _e( 'Default Question Category', QA_TEXTDOMAIN ) ?></label>
+					<label for="default_category"><?php _e( 'Default Mission Category', QA_TEXTDOMAIN ) ?></label>
 				</th>
 					<td>
-					<?php 
+					<?php
 					if ( isset( $options['default_category'] ) )
 						$selected = $options['default_category'];
 					else
@@ -380,25 +380,25 @@ function qa_settings_field_layout() {
 					</select>
 					&nbsp;&nbsp;&nbsp;
 					<span class="description">
-					<?php _e( 'If no category has been selected by the author, you can assign a category to the submitted question.', QA_TEXTDOMAIN ) ?>
+					<?php _e( 'If no category has been selected by the author, you can assign a category to the submitted mission.', QA_TEXTDOMAIN ) ?>
 					</span>
 					</td>
 			</tr>
-			
+
 			<tr>
 				<th>
-					<label for="visitor_method"><?php _e( 'After Visitor Submits a Question or Answer', QA_TEXTDOMAIN ) ?></label>
+					<label for="visitor_method"><?php _e( 'After Visitor Submits a Mission or Answer', QA_TEXTDOMAIN ) ?></label>
 				</th>
 					<td>
 					<select id="visitor_method" name="method">
-					<?php 
+					<?php
 					if ( isset($options['method'] ) )
 						$method = $options['method'];
 					else
 						$method = '';
 					?>
 					<option value="claim" <?php if ($method != 'assign') echo "selected='selected'"?>><?php _e( 'He is asked for registration', QA_TEXTDOMAIN ) ?></option>
-					<option value="assign" <?php if ($method == 'assign') echo "selected='selected'"?>><?php _e( 'Question is assigned to a user', QA_TEXTDOMAIN ) ?></option>
+					<option value="assign" <?php if ($method == 'assign') echo "selected='selected'"?>><?php _e( 'Mission is assigned to a user', QA_TEXTDOMAIN ) ?></option>
 					</select>
 					&nbsp;
 					<span id="assigned_to" <?php if ($method != 'assign') echo "style='display:none'"?>>
@@ -412,18 +412,18 @@ function qa_settings_field_layout() {
 					</span>
 					&nbsp;&nbsp;&nbsp;
 					<span class="description">
-					<?php _e( 'Every question and answer should have an author. If you want to let the visitor submit a question or answer without the need for registration, you can assign a preset author.', QA_TEXTDOMAIN ) ?>
+					<?php _e( 'Every mission and answer should have an author. If you want to let the visitor submit a mission or answer without the need for registration, you can assign a preset author.', QA_TEXTDOMAIN ) ?>
 					</span>
 					</td>
 			</tr>
-			
-			
+
+
 			<tr>
 				<th>
 					<label for="thank_you_page"><?php _e( 'Thank You Page', QA_TEXTDOMAIN ) ?></label>
 				</th>
 					<td>
-					<?php 
+					<?php
 					if ( isset( $options['thank_you'] ) )
 						$selected = $options['thank_you'];
 					else
@@ -431,18 +431,18 @@ function qa_settings_field_layout() {
 					wp_dropdown_pages( array('name'=>'thank_you', 'selected'=>$selected) ); ?>
 					&nbsp;&nbsp;&nbsp;
 					<span class="description">
-					<?php _e( 'If questions and are saved as pending, user will be redirected to this page after submitting a question or answer.', QA_TEXTDOMAIN ) ?>
+					<?php _e( 'If missions and are saved as pending, user will be redirected to this page after submitting a mission or answer.', QA_TEXTDOMAIN ) ?>
 					</span>
 					</td>
 			</tr>
-			
+
 			<tr>
 				<th>
 					<label for="unauthorized"><?php _e( 'Unauthorized Access Page', QA_TEXTDOMAIN ) ?></label>
 				</th>
-				
+
 				<td>
-				<?php 
+				<?php
 				if ( isset( $options['unauthorized'] ) )
 					$selected = $options['unauthorized'];
 				else
@@ -454,7 +454,7 @@ function qa_settings_field_layout() {
 				</span>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<th>
 					<label for="report"><?php _e( 'Report Reasons', QA_TEXTDOMAIN ) ?></label>
@@ -467,7 +467,7 @@ function qa_settings_field_layout() {
 				</span>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<th>
 					<label for="report"><?php _e( 'Use Captcha', QA_TEXTDOMAIN ) ?></label>
@@ -477,14 +477,14 @@ function qa_settings_field_layout() {
 				&nbsp;
 				<span class="description">
 				<?php _e( 'Whether to use Captcha verification while submitting report.', QA_TEXTDOMAIN ) ?>
-				<?php 
+				<?php
 				if ( !qa_is_captcha_usable() )
 					_e( 'Note: Your php installation does not let Captcha usage.', QA_TEXTDOMAIN );
 				?>
 				</span>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<th>
 					<label for="report"><?php _e( 'Email address on report', QA_TEXTDOMAIN ) ?></label>
@@ -493,15 +493,15 @@ function qa_settings_field_layout() {
 				<input type="text" style="width:200px" name="report_email" value="<?php if ( isset( $options["report_email"] ) ) echo $options["report_email"] ?>" />
 				&nbsp;&nbsp;&nbsp;
 				<span class="description">
-				<?php _e( 'Email address that will be notified in case a question or answer is reported. Leaving empty will disable notification. Note: If a question or answer is reported more than once, only the first report will be emailed, but number of reports and latest reporter will be saved.', QA_TEXTDOMAIN ) ?>
+				<?php _e( 'Email address that will be notified in case a mission or answer is reported. Leaving empty will disable notification. Note: If a mission or answer is reported more than once, only the first report will be emailed, but number of reports and latest reporter will be saved.', QA_TEXTDOMAIN ) ?>
 				</span>
 				</td>
 			</tr>
-			
-			
+
+
 			<?php
 			global $bp;
-			if ( is_object( $bp ) ) : 
+			if ( is_object( $bp ) ) :
 			?>
 			<tr>
 				<th>
@@ -511,11 +511,11 @@ function qa_settings_field_layout() {
 					<input type="checkbox" name="bp_comment_hide" value="1" <?php if (@$options["bp_comment_hide"]) echo "checked='checked'" ?>/>
 					&nbsp;&nbsp;&nbsp;
 					<span class="description">
-					<?php _e( 'Checking this will disable commenting for the question asked notification in Buddypress Activity Stream, forsing user to answer the question through plugin generated pages.', QA_TEXTDOMAIN ) ?>
+					<?php _e( 'Checking this will disable commenting for the mission asked notification in Buddypress Activity Stream, forsing user to answer the mission through plugin generated pages.', QA_TEXTDOMAIN ) ?>
 					</span>
 					</td>
 			</tr>
-			
+
 			<?php endif; ?>
 		</table>
 		</div>
@@ -532,12 +532,12 @@ function qa_settings_field_layout() {
 
 	<div class="postbox <?php echo $this->postbox_classes('qa_notification') ?>" id="qa_notification">
 	<h3 class='hndle'><span><?php _e('Notification Settings', QA_TEXTDOMAIN) ?></span></h3>
-	
-	
+
+
 	<div class="inside">
 
 		<table class="form-table">
-		
+
 					<tr>
 				<th>
 					<label for="qa_email_notification_subject"><?php _e( 'Notification E-mail Subject', QA_TEXTDOMAIN ) ?></label>
@@ -550,7 +550,7 @@ function qa_settings_field_layout() {
 					</span>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<th>
 					<label for="qa_email_notification_content"><?php _e( 'Notification E-mail Content', QA_TEXTDOMAIN ) ?></label>
@@ -576,7 +576,7 @@ function qa_settings_field_layout() {
 		<span style="display:none;font-weight:bold;color:darkgreen" class="qa_settings_saved"><?php _e( 'Settings saved', QA_TEXTDOMAIN ); ?></span>
 	</p>
 
-	
+
 	</form>
 	</div>
 </div>

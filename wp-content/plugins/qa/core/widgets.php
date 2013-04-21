@@ -52,16 +52,16 @@ class QA_Widget_Questions extends QA_Widget_Helper {
 	);
 
 	function QA_Widget_Questions() {
-		$widget_ops = array( 'description' => __( 'List of questions selectable from recent, most popular and unanswered ones', QA_TEXTDOMAIN ) );
-		$this->WP_Widget( 'questions', __( 'Q&A: Questions', QA_TEXTDOMAIN ), $widget_ops );
-		
+		$widget_ops = array( 'description' => __( 'List of missions selectable from recent, most popular and unanswered ones', QA_TEXTDOMAIN ) );
+		$this->WP_Widget( 'questions', __( 'M&A: Missions', QA_TEXTDOMAIN ), $widget_ops );
+
 	}
 
 	function content( $instance ) {
 		global $post, $_qa_core;
-		
+
 		// Check if action is there
-		if ( has_action( 'pre_get_posts', array( $_qa_core, 'questions_per_page' ) ) ) { 
+		if ( has_action( 'pre_get_posts', array( $_qa_core, 'questions_per_page' ) ) ) {
 			$had_action = true;
 			// Remove posts per page setting so that widget shows the correct number of items
 			remove_action( 'pre_get_posts', array( $_qa_core, 'questions_per_page' ) );
@@ -70,7 +70,7 @@ class QA_Widget_Questions extends QA_Widget_Helper {
 			$had_action = false;
 
 		extract( $instance );
-		
+
 		if ( !isset( $number ) )
 			$number = 5;
 
@@ -91,20 +91,20 @@ class QA_Widget_Questions extends QA_Widget_Helper {
 			'posts_per_page' => $number,
 			'suppress_filters' => false
 		) );
-		
+
 		$args = apply_filters( 'qa_question_widget_args', $args, $instance );
-		
+
 		$tag_ids = array();
 		if (isset($instance['tags']) && !empty($instance['tags'])) {
 			$args['question_tag'] = $instance['tags'];
 		}
-		
+
 		$cat_ids = array();
 		if (isset($instance['categories']) && !empty($instance['categories'])) {
 			$args['question_category'] = $instance['categories'];
 		}
-		
-		
+
+
 		echo '<ul>';
 		foreach ( get_posts( $args ) as $post ) {
 			setup_postdata( $post );
@@ -114,7 +114,7 @@ class QA_Widget_Questions extends QA_Widget_Helper {
 		echo '</ul>';
 
 		wp_reset_postdata();
-		
+
 		// Add the action back
 		if ( $had_action )
 			add_action( 'pre_get_posts', array( $_qa_core, 'questions_per_page' ) );
@@ -171,7 +171,7 @@ class QA_Widget_Questions extends QA_Widget_Helper {
 			<div class="instructions"><?php _e( 'Comma separated', QA_TEXTDOMAIN ); ?></div>
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id('number'); ?>"><?php _e( 'Number of questions to show:', QA_TEXTDOMAIN ); ?></label>
+			<label for="<?php echo $this->get_field_id('number'); ?>"><?php _e( 'Number of missions to show:', QA_TEXTDOMAIN ); ?></label>
 			<?php
 			echo _qa_html( 'input', array(
 				'type' => 'text',
@@ -205,8 +205,8 @@ class QA_Widget_Tags extends QA_Widget_Helper {
 	);
 
 	function QA_Widget_Tags() {
-		$widget_ops = array( 'description' => __( 'The most popular question tags in cloud format', QA_TEXTDOMAIN ) );
-		$this->WP_Widget( 'question_tags', __( 'Q&A: Question Tags', QA_TEXTDOMAIN ), $widget_ops );
+		$widget_ops = array( 'description' => __( 'The most popular mission tags in cloud format', QA_TEXTDOMAIN ) );
+		$this->WP_Widget( 'question_tags', __( 'M&A: Mission Tags', QA_TEXTDOMAIN ), $widget_ops );
 	}
 
 	function widget( $args, $instance ) {
@@ -260,8 +260,8 @@ class QA_Widget_Categories extends QA_Widget_Helper {
 	);
 
 	function QA_Widget_Categories() {
-		$widget_ops = array( 'description' => __( 'A list of question categories', QA_TEXTDOMAIN ) );
-		$this->WP_Widget( 'question_categories', __( 'Q&A: Question Categories', QA_TEXTDOMAIN ), $widget_ops );
+		$widget_ops = array( 'description' => __( 'A list of mission categories', QA_TEXTDOMAIN ) );
+		$this->WP_Widget( 'question_categories', __( 'M&A: Mission Categories', QA_TEXTDOMAIN ), $widget_ops );
 	}
 
 	function widget( $args, $instance ) {
@@ -286,7 +286,7 @@ class QA_Widget_Categories extends QA_Widget_Helper {
 			'show_count' => $instance['count'],
 			'title_li' => ''
 		);
-		
+
 		$cat_args = apply_filters( 'qa_category_widget_args', $cat_args, $instance );
 
 		echo '<ul>';
@@ -301,7 +301,7 @@ class QA_Widget_Categories extends QA_Widget_Helper {
 		$this->title_field( $instance['title'] );
 ?>
 		<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('count'); ?>" name="<?php echo $this->get_field_name('count'); ?>"<?php checked( $instance['count'] ); ?> />
-		<label for="<?php echo $this->get_field_id('count'); ?>"><?php _e( 'Show question counts', QA_TEXTDOMAIN ); ?></label><br />
+		<label for="<?php echo $this->get_field_id('count'); ?>"><?php _e( 'Show mission counts', QA_TEXTDOMAIN ); ?></label><br />
 <?php
 	}
 
@@ -323,7 +323,7 @@ class QA_Widget_Reputation extends QA_Widget_Helper {
 
 	function QA_Widget_Reputation() {
 		$widget_ops = array( 'description' => __( 'A list of users having highest reputation points', QA_TEXTDOMAIN ) );
-		$this->WP_Widget( 'question_reputation', __( 'Q&A: Users with Highest Reputation', QA_TEXTDOMAIN ), $widget_ops );
+		$this->WP_Widget( 'question_reputation', __( 'M&A: Users with Highest Reputation', QA_TEXTDOMAIN ), $widget_ops );
 	}
 
 	function widget( $args, $instance ) {
@@ -394,7 +394,7 @@ function qa_widgets_init() {
 	register_widget( 'QA_Widget_Tags' );
 
 	register_widget( 'QA_Widget_Categories' );
-	
+
 	register_widget( 'QA_Widget_Reputation' );
 }
 

@@ -248,8 +248,8 @@ class QA_Core {
 				'new_item'		=> __('New Mission', QA_TEXTDOMAIN),
 				'view_item'		=> __('View Mission', QA_TEXTDOMAIN),
 				'search_items'	=> __('Search Missions', QA_TEXTDOMAIN),
-				'not_found'		=> __('No questions found.', QA_TEXTDOMAIN),
-				'not_found_in_trash'	=> __('No questions found in trash.', QA_TEXTDOMAIN),
+				'not_found'		=> __('No missions found.', QA_TEXTDOMAIN),
+				'not_found_in_trash'	=> __('No missions found in trash.', QA_TEXTDOMAIN),
 			)
 		);
 

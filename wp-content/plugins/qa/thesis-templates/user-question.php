@@ -57,7 +57,7 @@ function do_qa_single(){
           <ul id="qa-user-tabs">
             <li><a href="#qa-user-questions">
               <span id="user-questions-total"><?php echo number_format_i18n( $wp_query->found_posts ); ?></span>
-              <?php echo _n( 'Question', 'Questions', $wp_query->found_posts, QA_TEXTDOMAIN ); ?>
+              <?php echo _n( 'Mission', 'Missions', $wp_query->found_posts, QA_TEXTDOMAIN ); ?>
             </a></li>
 
             <li><a href="#qa-user-answers">
