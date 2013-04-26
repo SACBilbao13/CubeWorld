@@ -1,0 +1,551 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: statpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-02 08:50+0100\n"
+"PO-Revision-Date: 2013-03-02 08:50+0100\n"
+"Last-Translator: Peter Bago <peterbago@gmail.com>\n"
+"Language-Team: \n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk\n"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:52
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2948
+msgid "Overview"
+msgstr "Áttekintés"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:53
+msgid "Details"
+msgstr "Részletek"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:54
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1210
+msgid "Spy"
+msgstr "Részletes info"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:55
+msgid "New Spy"
+msgstr "Új stat"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:56
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1131
+msgid "Spy Bot"
+msgstr "Botok stat"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:57
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:795
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:809
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1323
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1366
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1468
+msgid "Search"
+msgstr "Keresés"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:58
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:504
+msgid "Export"
+msgstr "Export"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:59
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:173
+msgid "Options"
+msgstr "Beállítások"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:60
+msgid "NewStatPressUpdate"
+msgstr "NewStatPress frissítés"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:61
+msgid "NewStatpress blog"
+msgstr ""
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:62
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:403
+msgid "Credits"
+msgstr "Szerzők"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:170
+msgid "Saved"
+msgstr "Elmentett"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:176
+msgid "Collect data about logged users, too."
+msgstr "Bejelentkezett látogatókról is gyűjtse a statot"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:177
+msgid "Do not collect spiders visits"
+msgstr "Ne gyűjtse a spiderek látogatásait"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:178
+msgid "Crypt IP addresses"
+msgstr "Titkosított IP címek"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:179
+msgid "Show NewStatPress dashboard widget"
+msgstr "Mutassa a híreket a dashboard widgeten"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:182
+msgid "New Spy: number of IP per page"
+msgstr "Új stat: oldalakénti IP száma"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:189
+msgid "New Spy: number of visits for IP"
+msgstr "Új stat: IP-kénti látogatások"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:196
+msgid "Spy Bot: number of bot per page"
+msgstr "Bot stat: oldalakénti bot száma"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:203
+msgid "Spy Bot: number of bot for IP"
+msgstr "Bot stat: IP-kénti bot látogatások"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:210
+msgid "Automatically delete visits older than"
+msgstr "Automatikusan törölje a régebbi látogatásokat mint"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:212
+msgid "Never delete!"
+msgstr "Sose töröld!"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:213
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:365
+msgid "month"
+msgstr "hónap"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:214
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:215
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:366
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:367
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:368
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:369
+msgid "months"
+msgstr "hónapok"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:216
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:370
+msgid "year"
+msgstr "év"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:219
+msgid "Days in Overview graph"
+msgstr "Napok áttekintése grafikon"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:228
+msgid "Minimum capability to view stats"
+msgstr "Minimum követelmény a stat futtatásához"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:232
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1059
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1258
+msgid "more info"
+msgstr "további információ"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:238
+msgid "Logged users to ignore"
+msgstr "Bejelentkezett usereket ne vegye figyelembe"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:239
+msgid "Enter a list of users you don't want to track, separated by commas, even if collect data about logged users is on"
+msgstr "Írd be a userek nevét vesszővel elválasztva, akiket nem akarod, hogy a rendszer elmentsen, még akkor is ha a be van kapcsolva a bejelentkezett userek követése"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:246
+msgid "IP addresses to ignore"
+msgstr "Ezeket az IP címeket ne vegye figyelembe"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:247
+msgid "Enter a list of networks you don't want to track, separated by commas. Each network <strong>must</strong> be defined using the CIDR notation (i.e. <em>192.168.1.1/24</em>). If the format is incorrect, NewStatPress may not track pageviews properly."
+msgstr "Írd be a hálozat nevét vesszővel elválasztva, akiket nem akarod, hogy a rendszer elmentsen. Összes hálózat <strong>kötelezően</strong> a CIDR szerint kell kinézzen (pl: <em>192.168.1.1</em>). Ha nem eszerint mented el, a NewStatPress nem garantálja, hogy megfelelően működik."
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:254
+msgid "Pages and posts to ignore"
+msgstr "Oldalak és bejegyzéseket ne vegye figyelembe"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:255
+msgid "Enter a list of permalinks you don't want to track, separated by commas. You should omit the domain name from these resources: <em>/about, p=1</em>, etc. NewStatPress will ignore all the pageviews whose permalink <strong>contains</strong> at least one of them."
+msgstr "Írd be vesszővel elválasztva a statikus linkeket, amiket nem akarsz elmenteni. Ki kellene hagynod a címekből az alábbiakat <em>/about, p=1</em> stb. NewStatPress ignorálja azokat az oldalletöltéseket ahol a statikus link <strong>tartalmazza</strong> a fentieket."
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:265
+msgid "Details options"
+msgstr "Részletek beállítások"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:270
+msgid "Elements in Top days (default 5)"
+msgstr "Mennyit jelenítsen a TOP napban (alapban 5)"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:276
+msgid "Elements in O.S. (default 10)"
+msgstr "Mennyit jelenítsen az operációs rendszernél (alapban 10)"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:282
+msgid "Elements in Browser (default 10)"
+msgstr "Mennyit jelenítsen a böngészőben (alapban 10)"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:288
+msgid "Elements in Feed (default 5)"
+msgstr "Mennyit jelenítsen a feedben (alapban 5)"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:294
+msgid "Elements in Search Engines (default 10)"
+msgstr "Mennyit jelenítsen a keresőgépeknél (alapban 10)"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:300
+msgid "Elements in Top Search Terms (default 20)"
+msgstr "Mennyit jelenítsen a top keresési szavaknál (alapban 20)"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:306
+msgid "Elements in Top Refferer (default 10)"
+msgstr "Mennyit jelenítsen a top hivatkozóknál (alapban 10)"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:312
+msgid "Elements in Countries/Languages (default 20)"
+msgstr "Mennyit jelenítsen az országok/nyelveknél (alapban 20)"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:318
+msgid "Elements in Spiders (default 10)"
+msgstr "Mennyit jelenítsen a spidereknél (alapban 10)"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:324
+msgid "Elements in Top Pages (default 5)"
+msgstr "Mennyit jelenítsen a top oldalaknál (alapban 5)"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:330
+msgid "Elements in Top Days - Unique visitors (default 5)"
+msgstr "Mennyit jelenítsen a top napoknál - egyedi látogatóknál (alapban 5)"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:336
+msgid "Elements in Top Days - Pageviews (default 5)"
+msgstr "Mennyit jelenítsen a top napoknál - oldalmegtekintéseknél (alapban 5)"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:342
+msgid "Elements in Top IPs - Pageviews (default 5)"
+msgstr "Mennyit jelenítsen a top IP-knél (alapban 5)"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:350
+msgid "Database update option"
+msgstr "Adatbázis frissítés beállítások "
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:354
+msgid "Select the interval of date from today you want to use for updating your database with new definitions. More it is big and more times and resources it require. You can choose to not update some fields if you want."
+msgstr "Válaszd ki azt az időtartamot a mai naptól számolva, amikortól frissíted az adatbázisod az új beállításokkal. Ha sokszor futtatod túl sok szerver erőforrást használhat. Ki tudod választani melyik mezőket nem akarod, hogy frissítse. "
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:359
+msgid "Update data in the given period"
+msgstr "Milyen időközönként frissítsen"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:361
+msgid "All!"
+msgstr "Összes!"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:362
+msgid "week"
+msgstr "hét"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:363
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:364
+msgid "weeks"
+msgstr "hetek"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:376
+msgid "Save options"
+msgstr "Beállitások kezelése"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:499
+msgid "Export stats to text file"
+msgstr "Statisztika kimentése"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:501
+msgid "From"
+msgstr "tól"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:502
+msgid "To"
+msgstr "hoz"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:503
+msgid "Fields delimiter"
+msgstr "Mező elválasztó"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:566
+msgid "Last hits"
+msgstr "Utolsó találatok"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:566
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:603
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:617
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:664
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:693
+msgid "Date"
+msgstr "Dátum"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:566
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:603
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:617
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:664
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:693
+msgid "Time"
+msgstr "Idő"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:566
+msgid "Country"
+msgstr "Ország"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:566
+msgid "Language"
+msgstr "Nyelv"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:566
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:664
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:792
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:804
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:807
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:819
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1465
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1477
+msgid "Page"
+msgstr "Oldal"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:603
+msgid "Last search terms"
+msgstr "Utolsó keresési kulcsszavak"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:603
+msgid "Terms"
+msgstr "Feltételek"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:603
+msgid "Engine"
+msgstr "Keresőgép"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:603
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:617
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1949
+msgid "Result"
+msgstr "Eredmény"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:612
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:629
+msgid "page viewed"
+msgstr "lekért oldal"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:617
+msgid "Last referrers"
+msgstr "Utolsó hivatkozók"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:617
+msgid "URL"
+msgstr "URL"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:635
+msgid "Last agents"
+msgstr "Utolsó programok"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:635
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:693
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1314
+msgid "Agent"
+msgstr "Program"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:664
+msgid "Last pages"
+msgstr "Utolsó látogatott oldalak"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:664
+msgid "OS"
+msgstr "Operációs rendszer"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:664
+msgid "Browser"
+msgstr "Böngésző"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:693
+msgid "Last spiders"
+msgstr "Utolsó spiderek"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:693
+msgid "Spider"
+msgstr "Spider"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:793
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:808
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1466
+msgid "Category"
+msgstr "Kategória"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:794
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1467
+msgid "Calendar"
+msgstr "Naptár"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:863
+msgid "period of days"
+msgstr "napszakok"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:906
+msgid "Pages"
+msgstr "Oldalak"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1005
+msgid "Visitor Spy"
+msgstr "Látogatók részletei"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1044
+msgid "Http domain"
+msgstr "HTTP domain"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1055
+msgid "Hostip country"
+msgstr "Hosztolt IP-k országai"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1076
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1077
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1084
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1085
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1284
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1286
+msgid "arrived from"
+msgstr "érkezett"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1076
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1084
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1284
+msgid "searching"
+msgstr "keresés"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1313
+msgid "URL Requested"
+msgstr "lekért webcím"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1315
+msgid "Referrer"
+msgstr "Hivatkozás"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1316
+msgid "Search terms"
+msgstr "Keresőszavak"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1317
+msgid "Search engine"
+msgstr "Kereső"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1318
+msgid "Operative system"
+msgstr "Operációs rendszer"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1328
+msgid "Field"
+msgstr "Mező"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1335
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1336
+msgid "Group by"
+msgstr "csoportosítva mint"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1338
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1339
+msgid "Sort by"
+msgstr "rendezve mint"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1341
+msgid "if contains"
+msgstr "ha tartalmazza"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1351
+msgid "sort by count if grouped"
+msgstr "számonként rendezve ha vannak csoportok"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1352
+msgid "include spiders/crawlers/bot"
+msgstr "spiders/crawlers/bots-okkal együtt"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1353
+msgid "include feed"
+msgstr "Feeddel együtt"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1360
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2489
+msgid "Limit results to"
+msgstr "Limitálva van"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1427
+msgid "Results"
+msgstr "Eredmény"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1434
+msgid "Count"
+msgstr "Szám"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1527
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2490
+msgid "Visits"
+msgstr "Látogatók"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1949
+msgid "Updating..."
+msgstr "Frissítés"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:1949
+msgid "Size"
+msgstr "Méret"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2452
+msgid "Title:"
+msgstr "Cím:"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2453
+msgid "Body:"
+msgstr "Body:"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2488
+msgid "Title"
+msgstr "Cím"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2609
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2951
+msgid "Total since"
+msgstr "Összesen indulás óta"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2612
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2954
+msgid "Last month"
+msgstr "Múlt hónapban"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2613
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2614
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2955
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2956
+msgid "This month"
+msgstr "Ebben a hónapban"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2615
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2957
+msgid "Yesterday"
+msgstr "Tegnap"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2616
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2958
+msgid "Today"
+msgstr "Ma"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2621
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2964
+msgid "Visitors"
+msgstr "Látogatók"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2696
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:3039
+msgid "Pageviews"
+msgstr "Oldalmegjelenítés"
+
+#: /mnt/new/home/ice/SRC/cvsroot/newstatpress/trunk/newstatpress.php:2922
+msgid "More details"
+msgstr "További részletek"
+
+#~ msgid "Total"
+#~ msgstr "Insgesamt"

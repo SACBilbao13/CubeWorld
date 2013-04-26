@@ -1,0 +1,1 @@
+[26-Apr-2013 19:19:00 Europe/Madrid] PHP Fatal error:  Call to undefined function _e() in /home/razican/public_html/cubeworld/wp-content/plugins/qa/ui-admin/user_profile.php on line 4

@@ -1,0 +1,109 @@
+Windows 8|WindowsNT6.2|
+Windows 7|WindowsNT7|
+Windows 7|WindowsNT6.1|
+Windows Vista|WindowsNT6.0|
+Windows XP|WindowsNT5.1|
+Windows XP|WindowsXP|
+Windows Server 2003|WindowsNT5.2|
+Windows 2000|Windows2000|
+Windows 2000|WindowsNT5.01|
+Windows 2000|WindowsNT5.0|
+Windows ME|WindowsME|
+Windows ME|Win9x4.90|
+Windows 98|Windows98|
+Windows 98|Win98|
+Windows 95|Windows95|
+Windows 95|Win95|
+Windows NT 4|WindowsNT4|
+Windows NT 4|WinNT|
+Windows NT 4|WindowsNT|
+Windows 3.1|Win3.1|
+Windows CE|WindowsCE|
+Windows CE|WinCE|
+Windows|Win32|
+Windows Phone OS 7|WindowsPhoneOS7.0|
+Windows Phone OS|WindowsPhoneOS|
+Windows Mobile|WindowsMobile|
+Sun Solaris 7|SunOS5.7sun4u|
+Sun Solaris|SunOS|
+Sun Solaris|Solaris|
+Wii|Wii|
+iOS 3.1.2|iPhoneOS3_1_2|
+iOS 3.1.3|iPhoneOS3_1_3likeMacOSX|
+iOS 3.2.1|3_2_1likeMacOSX|
+iOS 3.2.2|OS 3_2_2likeMacOSX|
+iOS 4.0|iPhoneOS4_0|
+iOS 4.1|iPhoneOS4_1|
+iOS 4.2|iPhoneOS4_2|
+iOS 4.3|iPhoneOS4_3|
+iOS 4.3|OS4_3_1likeMacOSX|
+iOS 3|iPhoneOS3|
+iOS 4|iPhoneOS4|
+iOS 5|iPhoneOS5|
+iOS 6|iPhoneOS6|
+iPhone|iPhone|
+iPod|iPod|
+iPad|iPad|
+Java Platform 2 Micro Edition|J2ME/MIDP|
+Amiga|Amiga|
+Android Linux 1|Android1|
+Android Linux 2|Android2|
+Android Linux 3|Android3|
+Android Linux 4|Android4|
+Android Linux|Android|
+Bada 1.2|Bada/1.2|
+Bada|Bada|
+BlackBerry 5.0|BlackBerry9300/5.0.0.845|
+BlackBerry 5.0|BlackBerry8520/5.0|
+BlackBerry 4.6|BlackBerry8520/4.6|
+BlackBerry|BlackBerry|
+Mac OS X Cheetah|MacOSX10.0|
+Mac OS X Cheetah|MacOSX10_0|
+Mac OS X Puma|MacOSX10.1|
+Mac OS X Puma|MacOSX10_1|
+Mac OS X Jaguar|MacOSX10.2|
+Mac OS X Jaguar|MacOSX10_2|
+Mac OS X Panther|MacOSX10.3|
+Mac OS X Panther|MacOSX10_3|
+Mac OS X Tiger|MacOSX10.4|
+Mac OS X Tiger|MacOSX10_4|
+Mac OS X Leopard|MacOSX10.5|
+Mac OS X Leopard|MacOSX10_5|
+Mac OS X Snow Leopard|MacOSX10.6|
+Mac OS X Snow Leopard|MacOSX10_6|
+Mac OS X Lion|MacOSX10.7|
+Mac OS X Lion|MacOSX10_7|
+Mac OS X Mountain Lion|MacOSX10.8|
+Mac OS X Mountain Lion|MacOSX10_8|
+Mac OS X|MacOSX|
+Mac OS X|Vienna|
+Mac OS X|Ensemble2|
+Mac|Mac|
+FreeBSD|FreeBSD|
+OpenBSD|OpenBSD|
+Debian Linux|Debian|
+Ubuntu Hardy|Ubuntu/8.04|
+Ubuntu Jaunty|Ubuntu/9.25|
+Ubuntu Maverick|Ubuntu/10.10| 
+Ubuntu lucid Lynx|Ubuntu/10.04|
+Ubuntu Chromium|Ubuntu/11.04|
+Ubuntu Oneiric Ocelot|Ubuntu/11.10|
+Ubuntu Linux|Ubuntu|
+Suse Linux|Suse|
+Suse Linux|SUSE|
+Fedora Linux|Fedora|
+Linux Mint 10 Julia|Linux Mint/10 (Julia)|
+Linux Mint 9 Isadora|Linux Mint/9 Isadora|
+Linux Mint|Linux Mint|
+Linux|Linux|
+Linux|linux|
+WebTV|WebTV|
+Symbian 9|SymbianOS/9|
+Symbian 3|Symbian/3|
+Symbian|Symbian|
+Mac OS X|Vienna|
+Mac OS X|Ensemble2|
+SGI Irix|Irix|
+Unix|Unix|
+Unix|X11|
+QNX|QNX|

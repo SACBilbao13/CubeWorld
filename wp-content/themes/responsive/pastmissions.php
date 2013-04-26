@@ -30,6 +30,8 @@ get_header(); ?>
 				<?php get_template_part( 'post-meta-page' ); ?>
 
 				<div class="post-entry">
+					Here you can get more information about past launches of the Cubesat project, the information 
+					is updated in real-time.
 					<?php
 						include(ABSPATH.'wp-includes/simple_html_dom.php');
 						$html = file_get_html('http://www.cubesat.org/index.php/missions/past-launches');
