@@ -1,0 +1,35 @@
+/*
+Theme Name:     CubeWorld
+Theme URI:      http://cubeworld.razican.com/
+Description:    CubeWorld's theme
+Author:         Razican
+Author URI:     http://www.razican.com/
+Template:       responsive
+Version:        1.0.0
+*/
+@import url("../responsive/style.css");
+
+body{background-image:url('./images/nasabackgound.jpg')}
+#qa-page-wrapper{padding:1em;width:100%}
+.qa-search{width:40%}
+.qa-search form{margin:0px}
+#qa-menu button{margin:0.1em 0.1em 0.1em 0.4em}
+#qa-menu input{margin:0.1em;height:1.6em}
+@media (min-width: 500px){#qa-menu input{width:40%}}
+@media (max-width: 499px){#qa-menu input{width:100%}}
+#wp-admin-bar-wp-logo{display:none}
+#footer-wrapper .col-300{color:#FFF}
+#footer-wrapper .col-300 a{color: #C8C8C8}
+li.qa-search{margin-left:1em}
+div.qa-voting-box form{text-align:center}
+#past-missions li{display:block;border-radius:0.25em;background-color:#E6E6E6;border:1px solid #A0A0A0;padding:1em;margin:1em}
+#past-missions article td {border: 1px solid #AFAFAF}
+#trajectory-form div {display:inline-block;margin:auto;vertical-align:top}
+#trajectory-form div.form-right {padding-left:5em}
+#trajectory-form label:not(.inline) {display:block}
+#trajectory-form label.inline {font-weight:normal;margin-top:1em}
+#trajectory-form textarea {resize:vertical;width:20em;height:5em;max-height:10em}
+#trajectory-form input:not([type="checkbox"]) {margin: 0.5em 0.5em 0.5em 1em}
+#trajectory-form input[type="checkbox"] {margin: 0 0.5em}
+#trajectory-form input[type="submit"] {display:block;margin:1em auto}
+#mis-type-way, #mis-type-enc {display:block; padding-left:2em}

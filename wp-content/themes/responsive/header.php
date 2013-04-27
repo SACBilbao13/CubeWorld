@@ -45,7 +45,6 @@ if ( defined( 'WPSEO_VERSION' ) ) {
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<link rel="shortcut icon" href="http://cubeworld.razican.com/favicon.png">
 
 <?php wp_enqueue_style('responsive-style', get_stylesheet_uri(), false, '1.9.3');?>
 

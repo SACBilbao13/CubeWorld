@@ -30,10 +30,10 @@ get_header(); ?>
 				<?php get_template_part( 'post-meta-page' ); ?>
 
 				<div class="post-entry">
-					Here you can get more information about past launches of the Cubesat project, the information 
+					Here you can get more information about past launches of the Cubesat project, the information
 					is updated in real-time.
 					<?php
-						include(ABSPATH.'wp-includes/simple_html_dom.php');
+						include('simple_html_dom.php');
 						$html = file_get_html('http://www.cubesat.org/index.php/missions/past-launches');
 
 						echo '<ul id="past-missions">';
@@ -50,7 +50,7 @@ get_header(); ?>
 						echo '</ul>';
 						echo '<a href="http://www.cubesat.org/index.php/missions/past-launches" target="_blank" title="More">More</a>';
 					?>
-					<script type="text/javascript" charset="UTF-8" src="<?php bloginfo('siteurl'); ?>/wp-includes/js/past-missions.js"></script>
+					<script type="text/javascript" charset="UTF-8" src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/js/past-missions.js"></script>
 				</div><!-- end of .post-entry -->
 
 				<?php get_template_part( 'post-data' ); ?>

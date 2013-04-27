@@ -8,7 +8,7 @@ if (empty($_SERVER['HTTP_X_REQUESTED_WITH']) OR
 	exit;
 }
 
-include('../wp-includes/simple_html_dom.php');
+include('./simple_html_dom.php');
 $html = file_get_html($_POST['ref']);
 
 //$title = $html->find('h2.contentheading');

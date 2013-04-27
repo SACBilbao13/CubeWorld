@@ -79,26 +79,7 @@ get_header(); ?>
 						</div>
 							<input type="submit" value="Search">
 					</form></section>
-
-					<?php
-						include(ABSPATH.'wp-includes/simple_html_dom.php');
-						$html = file_get_html('http://www.cubesat.org/index.php/missions/past-launches');
-
-					//	echo '<ul id="past-missions">';
-						$i = 1;
-
-						foreach($html->find('tr[class=sectiontableentry1] a, tr[class=sectiontableentry2] a') as $e)
-						{
-						//	echo '<li>';
-
-						//	echo '<a href="'.str_replace('/index.php', 'http://www.cubesat.org/index.php', $e->href).'" title="'.trim($e->innertext).'">'.trim($e->innertext).'</a>';
-
-						//	echo '</li>';
-						}
-					//	echo '</ul>';
-					//	echo '<a href="http://www.cubesat.org/index.php/missions/past-launches" target="_blank" title="More">More</a>';
-					?>
-					<script type="text/javascript" charset="UTF-8" src="<?php bloginfo('siteurl'); ?>/wp-includes/js/past-missions.js"></script>
+					<script type="text/javascript" charset="UTF-8" src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/js/trajectory-sim.js"></script>
 				</div><!-- end of .post-entry -->
 
 				<?php get_template_part( 'post-data' ); ?>

@@ -3,12 +3,12 @@
 Plugin Name: NewStatPress
 Plugin URI: http://newstatpress.altervista.org
 Description: Real time stats for your Wordpress blog
-Version: 0.5.7
+Version: 0.5.8
 Author: Stefano Tognon (from Daniele Lippi works)
 Author URI: http://newstatpress.altervista.org
 */
 
-$_NEWSTATPRESS['version']='0.5.7';
+$_NEWSTATPRESS['version']='0.5.8';
 $_NEWSTATPRESS['feedtype']='';
 
 /**
@@ -1874,7 +1874,13 @@ function iriStatAppend() {
       // Get OS and browser
       $os=iriGetOS($userAgent);
       $browser=iriGetBrowser($userAgent);
+
+     if (isset($refferer)) {
       list($searchengine,$search_phrase)=explode("|",iriGetSE($referrer));
+     } else {
+         $searchengine='';
+         $search_phrase='';
+       }
     }
 
   // Country (ip2nation table) or language
@@ -2298,6 +2304,19 @@ function iri_NewStatPress_Vars($body) {
          feed='';
       ");
     $body = str_replace("%totalpageviews%", $qry[0]->pageview, $body);
+  }
+
+  # look for %todaytotalpageviews%
+  if(strpos(strtolower($body),"%todaytotalpageviews%") !== FALSE) {
+    $qry = $wpdb->get_results(
+      "SELECT count(id) AS pageview 
+       FROM $table_name 
+       WHERE 
+         date = '".gmdate("Ymd",current_time('timestamp'))."' AND
+         spider='' AND 
+         feed='';
+      ");
+    $body = str_replace("%todaytotalpageviews%", $qry[0]->pageview, $body);
   }
 
   # look for %thistotalvisits%

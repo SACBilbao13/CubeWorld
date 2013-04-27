@@ -4,7 +4,7 @@ Donate link: http://newstatpress.altervista.org
 Tags: stats,statistics,widget,admin,sidebar,visits,visitors,pageview,user,agent,referrer,post,posts,spy,statistiche,ip2nation,country
 Requires at least: 2.1
 Tested up to: 3.5.1
-Stable Tag: 0.5.7
+Stable Tag: 0.5.8
 
 NewStatPress is a new version of StatPress (that was the first real-time plugin dedicated to the management of statistics about blog visits).
 
@@ -45,6 +45,7 @@ Widget is customizable. These are the available variables:
 * %thistotalvisits% - this page, total visits
 * %alltotalvisits% - all page, total visits
 * %totalpageviews% - total pages view 
+* %todaytotalpageviews% -  total pages view today
 * %since% - Date of the first hit
 * %visits% - Today visits
 * %totalvisits% - Total visits
@@ -346,6 +347,12 @@ Check at http://newstatpress.altervista.org
   Chart is rendered into an iframe with SVG or VML. 
   See http://newstatpress.altervista.org/?p=381 for an example
 
+= 0.5.8 =
+
+* Remove Undefined offset in referrer if debug is on
+* Add %todaytotalpageviews% - total pages view today
+* Add Os (+3)
+
 == Upgrade Notice ==
 
 = 0.1.0 =
@@ -539,3 +546,7 @@ Check at http://newstatpress.altervista.org
 = 0.5.7 =
 
 * released 16/03/2013
+
+= 0.5.8 =
+
+* released 27/04/2013
