@@ -5,7 +5,7 @@ jQuery(document).ready(function($)
 		event.preventDefault();
 		var link = $(this);
 		$("#past-missions li article").remove();
-		$.post('http://cubeworld.razican.com/wp-content/themes/cubeworld/scraping.php',
+		$.post('http://www.cubeworld.co/wp-content/themes/cubeworld/includes/scraping.php',
 			{ref: $(this).attr('href')},
 			function(data)
 			{

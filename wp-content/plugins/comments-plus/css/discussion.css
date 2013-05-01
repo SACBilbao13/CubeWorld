@@ -1,0 +1,60 @@
+#wdcp-sd-discussion_switcher, #wdcp-sd-discussion_switcher li {	    		 	 			 		  
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none !important;
+}
+#wdcp-sd-discussion_switcher {
+	margin-bottom: 24px !important;
+}
+#wdcp-sd-discussion_switcher li {
+	float: left;
+}
+#wdcp-sd-discussion_switcher li a {
+	display: block;
+	height: 32px;
+	margin-right: 20px;
+	text-decoration: none;
+}
+#wdcp-sd-discussion_switcher li a span {
+	margin-left: 32px;
+	line-height: 32px;
+}
+
+#wdcp-sd-discussion_switcher .wdcp-sd-service_selected {
+	border-bottom: 2px solid #aaa;
+}
+
+a#wdcp-sd-discussion-facebook-switch {
+	background-image: url(../img/fb.png);
+	background-position: 8px 8px;
+	background-repeat: no-repeat
+}
+a#wdcp-sd-discussion-comments-switch {
+	background-image: url(../img/wp.png);
+	background-position: 8px 8px;
+	background-repeat: no-repeat
+}
+a#wdcp-sd-discussion-twitter-switch {
+	background-image: url(../img/tw.png);
+	background-position: 8px 8px;
+	background-repeat: no-repeat
+}
+
+.wdcp-sd-discussion {
+	margin-top: 10px;
+}
+.wdcp-sd-discussion ul, .wdcp-sd-discussion ol {
+	list-style: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.wdcp-sd-discussion li ul, .wdcp-sd-discussion li ol {
+	margin-left: 2em !important;
+}
+.wdcp-sd-discussion .comment-author {
+	float: left;
+	width: 50px;
+}
+
+
+/* 137717-1367065181 */

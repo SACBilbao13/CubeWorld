@@ -1,0 +1,49 @@
+Customizations of WP Symposium Blog Post can be done through two ways...
+
+
+* Hooks
+
+You can customize how blog posts are displayed at the WPS Profile page through several hooks.
+
+The first hook 'symposium_blogpost_filter_top' is located at the beginning of the page, it allows you to add whatever you want on top of it, like on any other WP Symposium Profile page actually.
+The hook function takes as parameter the HTML already generated, and returns the HTML to consider.
+
+The second hook is related to the query of posts. The hook 'symposium_blogpost_query_hook' allows you to modify the default query of posts WHERE post_type = 'post' AND post_status = 'publish' AND post_author = '$user_id'. So you can add any other parameter to the query, or even replace this completely, for instance if you need to query on your own custom post type.
+The hook function takes as parameter the query string already generated, and returns the query string to consider.
+
+Last but not least, you can add anything to the rows displayed at the WPS Profile Page -> (My) Blog Posts, through the hook 'symposium_blogpost_row_hook'. This hook will be called when drawing each row, it receives both the HTML already generated and the ID of the post at each given row. So you could for instance display an excerpt of the post, as well as the post thumbnail if it exists, by putting the following lines in your functions.php:
+
+function symposium_blogpost_row_action ( $html, $post_ID ) {
+	
+	$post = get_post($post_ID);
+	$html .= '<div class="symposium_blogpost_excerpt">';
+	$html .= substr(apply_filters('the_content', $post->post_content), 0, 300);
+	$html .= '</div>';
+	
+	$html .= '<div class="symposium_blogpost_thumbnail">';
+	$html .= get_the_post_thumbnail($post_ID, 'thumbnail');
+	$html .= '</div>';
+	
+	return $html;
+}
+add_filter ( 'symposium_blogpost_row_hook', 'symposium_blogpost_row_action', 10, 2 );
+
+See ajax/wp-symposium-blogpost-functions.php for further reference.
+
+
+* CSS styling
+
+By default, WPS Blog Post rows will adhere to the CSS styling of WPS through the two CSS classes 'row' and 'row_odd'.
+
+The Blog Post rows will also belong to a specific class 'symposium_blogpost_row'.
+
+For instance, you could display blog posts by rows of two by putting the following as custom CSS in Symposium -> Styles -> CSS:
+.__wps__wrapper .symposium_blogpost_row { width: 45%; clear: none;}
+.__wps__wrapper .row { float: left;}
+.__wps__wrapper .row_odd { float: right;}
+
+On a multisites install, another class is added, which name is made of the blog ID 'symposium_blogpost_blog_[blog_id]'. This allows you to display rows of blog posts with different styles, based on the blog on which they were published.
+
+
+If you need anything else, either hooks or CSS styling, just let me know and I'll gladly add them.
+AG

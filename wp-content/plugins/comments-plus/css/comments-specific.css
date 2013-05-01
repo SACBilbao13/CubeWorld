@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+ul#all-comment-providers {
+    background: none repeat scroll 0 0 #F3F3F3;
+    overflow: hidden;
+}
+ul#all-comment-providers li a {
+    background-color: #EDF8FC;
+    border-right: 3px solid #FFFFFF;
+    display: block;
+    float: left;
+    height: 32px;
+    width: 24%;
+    text-decoration: none !important;
+}
+.comment-provider {
+    background: none repeat scroll 0 0 #F3F3F3;
+    overflow: hidden;
+    padding: 0.8em;
+}
+ul#all-comment-providers li.selected-comment-provider a {
+    background-color: #F3F3F3;
+}
+#comment-providers input[type="submit"],
+	#comment-providers a.button,
+	#comment-providers a.button:visited,
+	#comment-providers a.button:link {
+	background: none repeat scroll 0 0 #12A8CB;
+    background: -moz-linear-gradient(center top , #00B6E8 0%, #00A1C7 100%) repeat scroll 0 0 transparent;	    		 	 			 		  
+    border: 2px solid #29A9D1;
+    color: #FFFFFF !important;
+    font-size: 14px;
+    padding: 4px 10px;
+    text-shadow: -1px -1px 0 #147CAA;
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+#comment-providers input[type="submit"]:hover,
+	#comment-providers a.button:hover {
+	font-size:14px;
+	color:#ffffff;
+	text-shadow:-1px -1px 0px #147caa;
+	background:#009dc6;
+	border:2px solid #1b708a;
+	padding:4px 10px;
+	text-transform:uppercase;
+}
+
+
+/* ----- Media queries ----- */
+
+@media (max-width: 480px) {
+    #all-comment-providers li a span {
+        display: none;
+        position: absolute;
+        left: -1200000000px;
+    }
+}
+
+
+/* 137717-1367065181 */

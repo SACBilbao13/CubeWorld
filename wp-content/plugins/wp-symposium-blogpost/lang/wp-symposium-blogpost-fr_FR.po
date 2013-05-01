@@ -1,0 +1,206 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Symposium Blog Post v1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-04-08 20:33:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: wp-symposium-blogpost_functions.php:210
+#@ wp-symposium
+msgid "Nothing to show, sorry."
+msgstr ""
+
+#: wp-symposium-blogpost.php:244
+#@ wp-symposium-blogpost
+msgid "Published a new blog post:"
+msgstr "Nouvel Article :"
+
+#: wp-symposium-blogpost_admin.php:19
+#@ default
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: wp-symposium-blogpost_admin.php:184
+#@ wp-symposium-blogpost
+msgid "Add Posts to Activity"
+msgstr "Ajouter les Articles à l'Activité"
+
+#: wp-symposium-blogpost_admin.php:215
+#@ wp-symposium
+msgid "Save Changes"
+msgstr ""
+
+#: wp-symposium-blogpost.php:73
+#: wp-symposium-blogpost.php:125
+#: wp-symposium-blogpost_admin.php:65
+#@ wp-symposium-blogpost
+msgid "My Blog Posts"
+msgstr "Mes Articles"
+
+#: wp-symposium-blogpost.php:74
+#: wp-symposium-blogpost.php:125
+#: wp-symposium-blogpost.php:188
+#: wp-symposium-blogpost.php:189
+#: wp-symposium-blogpost_admin.php:65
+#: wp-symposium-blogpost_admin.php:70
+#: wp-symposium-blogpost_admin.php:113
+#: wp-symposium-blogpost_admin.php:170
+#@ wp-symposium-blogpost
+msgid "Blog Posts"
+msgstr "Articles"
+
+#: wp-symposium-blogpost_functions.php:189
+#@ default
+msgid "(no title)"
+msgstr ""
+
+#: wp-symposium-blogpost_functions.php:204
+#@ wp-symposium
+msgid "more..."
+msgstr ""
+
+#: wp-symposium-blogpost_functions.php:94
+#@ wp-symposium-blogpost
+msgid "Commented on"
+msgstr "A ajouté un commentaire sur"
+
+#: wp-symposium-blogpost_admin.php:187
+#@ wp-symposium-blogpost
+msgid "Add one row to the Symposium Activity of an author each time he/she publishes a new post in the blog?"
+msgstr "Ajouter une ligne à l'Activité Symposium d'un auteur à chaque fois qu'il/elle publie un nouvel article dans le blog ?"
+
+#: wp-symposium-blogpost_admin.php:153
+#@ wp-symposium-blogpost
+msgid "Number of posts to show on a member's profile page, when first called, and then each time 'more' is pressed"
+msgstr "Nombre d'articles à afficher à la page profil d'un auteur, lors du premier affichage, puis à chaque fois que \"plus\" est pressé."
+
+#: wp-symposium-blogpost_admin.php:192
+#@ wp-symposium-blogpost
+msgid "Add Comments to Activity"
+msgstr "Ajouter les Commentaires à l'Activité"
+
+#: wp-symposium-blogpost_admin.php:143
+#@ wp-symposium-blogpost
+msgid "at"
+msgstr "à"
+
+#: wp-symposium-blogpost_admin.php:83
+#@ wp-symposium-blogpost
+msgid "Choose roles for which a menu entry will be added to the WP Symposium Profile Page of a member, listing all blog posts published by this member"
+msgstr "Choisissez les rôles pour lesquels une entrée sera ajoutée au menu de la page Profil WP Symposium d'un auteur, listant tous les articles publiés par cet auteur"
+
+#: wp-symposium-blogpost_admin.php:136
+#@ wp-symposium-blogpost
+msgid "Choose blogs of the network for which posts will be displayed on this site, at the WP Symposium Profile Page of these members"
+msgstr "Choisissez les blogs de ce réseau WP Multisites, dont les articles seront ajoutés à la page Profil WP Symposium de ces auteurs"
+
+#: wp-symposium-blogpost_admin.php:161
+#@ wp-symposium-blogpost
+msgid "Rewrite the authors URL in their posts meta, to link to their WPS profile page? NB: your theme must use get_author_posts_url() for this feature to work"
+msgstr "Réécrire le lien vers la page Profil WPS de l'auteur dans les méta-infos des articles du blog ? NB: votre thème doit utiliser get_author_posts_url() pour que cela fonctionne."
+
+#: wp-symposium-blogpost_admin.php:81
+#@ wp-symposium-blogpost
+msgid "Add Blog Posts to Profile menu"
+msgstr "Ajouter les Articles au menu Profil"
+
+#: wp-symposium-blogpost_admin.php:158
+#@ wp-symposium-blogpost
+msgid "Add Profile menu to Blog Posts"
+msgstr "Ajouter le menu Profil aux Articles"
+
+#: wp-symposium-blogpost_admin.php:169
+#@ wp-symposium-blogpost
+msgid "WPS default Profile view"
+msgstr "Vue par défaut"
+
+#: wp-symposium-blogpost_admin.php:171
+#@ wp-symposium
+msgid "Profile"
+msgstr ""
+
+#: wp-symposium-blogpost_admin.php:171
+#@ wp-symposium
+msgid "Default profile view"
+msgstr ""
+
+#: wp-symposium-blogpost_admin.php:171
+#@ wp-symposium-blogpost
+msgid "If checked above, which WPS Profile page should be linked to blog posts meta? NB: WPS default Profile page is defined in"
+msgstr "Si l'option ci-dessus est cochée, quelle vue de la page profil WPS doit être liée aux méta-infos des articles du blog ? NB: la vue par défaut est définie dans"
+
+#: wp-symposium-blogpost_admin.php:103
+#@ wp-symposium-blogpost
+msgid "Which items should be added to the vertical menu, at the WP Symposium Profile page ?"
+msgstr "Que doit être ajouté au menu vertical de la page Profile de WP Symposium ?"
+
+#: wp-symposium-blogpost_admin.php:106
+#@ wp-symposium
+msgid "Menu Item"
+msgstr ""
+
+#: wp-symposium-blogpost_admin.php:107
+#@ wp-symposium
+msgid "Own Page"
+msgstr ""
+
+#: wp-symposium-blogpost_admin.php:108
+#@ wp-symposium
+msgid "Own Page Text"
+msgstr ""
+
+#: wp-symposium-blogpost_admin.php:109
+#@ wp-symposium
+msgid "Other Members"
+msgstr ""
+
+#: wp-symposium-blogpost_admin.php:110
+#@ wp-symposium
+msgid "Other Members Text"
+msgstr ""
+
+#: wp-symposium-blogpost.php:172
+#@ wp-symposium-blogpost
+msgid "Blog_Post"
+msgstr ""
+
+#: wp-symposium-blogpost_admin.php:97
+#@ wp-symposium-blogpost
+msgid "You have activated the horizontal menu for the WP Symposium Profile page. The Blog Posts menu items will be displayed only for the roles checked above, so make sure your menu remains consistent for roles that are not checked."
+msgstr "Vous avez activé le menu horizontal de la page Profil de WP Symposium. Un élément de menu Articles ne sera ajouté que pour les rôles cochés ci-dessus, veillez à ce que votre menu reste cohérent pour les rôles non cochés."
+
+#: wp-symposium-blogpost_admin.php:179
+#@ wp-symposium-blogpost
+msgid "Add / rewrite the URL for comments authors, to link to their WPS profile page? NB: your theme must use comments_template() for this feature to work."
+msgstr "Ajouter / réécrire le lien vers la page Profil WPS des auteurs de commentaires ? NB : votre thème doit utiliser la fonction comments_template() pour que cela fonctionne."
+
+#: wp-symposium-blogpost_admin.php:208
+#@ wp-symposium-blogpost
+msgid "Add comments to members Activity, even when posting as visitors i.e. not logged in, based on email address? NB: make sure your comments are password-protected, or activate only with comments moderation."
+msgstr "Ajouter les commentaires publiés en tant que visiteur à l'Activitié WPS d'un membre, en se basant sur l'adresse email saisie ? NB : veillez à ce que votre formulaire de commentaires soit protégé par mot de passe, ou activez la modération des commentaires."
+
+#: wp-symposium-blogpost_admin.php:179
+#@ wp-symposium-blogpost
+msgid "Moreover this is based on email address, make sure your comment form is password-protected, or activate only with comments moderation."
+msgstr "De plus, l'identification étant basée sur l'adresse email, veillez à ce que votre formulaire de commentaires soit protégé par mot de passe, ou activez la modération des commentaires."
+
+#: wp-symposium-blogpost_admin.php:194
+#@ wp-symposium-blogpost
+msgid "Add one row to the Symposium Activity of a member each time he/she publishes a new comment to a:"
+msgstr "Ajouter une ligne à l'Activité Symposium d'un membre à chaque fois qu'il ajoute un commentaire à :"
+

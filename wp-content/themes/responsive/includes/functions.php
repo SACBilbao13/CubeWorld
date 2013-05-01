@@ -19,6 +19,69 @@ if ( !defined('ABSPATH')) exit;
  */
 ?>
 <?php
+/*
+ * Globalize Theme options
+ */
+$responsive_options = responsive_get_options();
+
+/*
+ * Hook options
+ */
+add_action('admin_init', 'responsive_theme_options_init');
+add_action('admin_menu', 'responsive_theme_options_add_page');
+
+/**
+ * Retrieve Theme option settings
+ */
+function responsive_get_options() {
+  // Globalize the variable that holds the Theme options
+  global $responsive_options;
+  // Parse array of option defaults against user-configured Theme options
+  $responsive_options = wp_parse_args( get_option( 'responsive_theme_options', array() ), responsive_get_option_defaults() );
+  // Return parsed args array
+  return $responsive_options;
+}
+
+/**
+ * Responsive Theme option defaults
+ */
+function responsive_get_option_defaults() {
+  $defaults = array(
+    'breadcrumb' => false,
+    'cta_button' => false,
+    'front_page' => 1,
+    'home_headline' => false,
+    'home_subheadline' => false,
+    'home_content_area' => false,
+    'cta_text' => false,
+    'cta_url' => false,
+    'featured_content' => false,
+    'google_site_verification' => '',
+    'bing_site_verification' => '',
+    'yahoo_site_verification' => '',
+    'site_statistics_tracker' => '',
+    'twitter_uid' => '',
+    'facebook_uid' => '',
+    'linkedin_uid' => '',
+    'youtube_uid' => '',
+    'stumble_uid' => '',
+    'rss_uid' => '',
+    'google_plus_uid' => '',
+    'instagram_uid' => '',
+    'pinterest_uid' => '',
+    'yelp_uid' => '',
+    'vimeo_uid' => '',
+    'foursquare_uid' => '',
+    'responsive_inline_css' => '',
+    'responsive_inline_js_head' => '',
+    'responsive_inline_css_js_footer' => '',
+    'static_page_layout_default' => 'content-sidebar-page',
+    'single_post_layout_default' => 'content-sidebar-page',
+    'blog_posts_index_layout_default' => 'content-sidebar-page',
+  );
+  return apply_filters( 'responsive_option_defaults', $defaults );
+}
+
 /**
  * Fire up the engines boys and girls let's start theme setup.
  */
@@ -260,27 +323,31 @@ add_filter('wp_page_menu', 'responsive_wp_page_menu');
  * @see http://codex.wordpress.org/Plugin_API/Filter_Reference/wp_title
  *
  */
-function responsive_wp_title( $title, $sep ) {
-	global $paged, $page;
+if (!function_exists('responsive_post_meta_data') && ! defined( 'AIOSEOP_VERSION' ) ) :
 
-	if ( is_feed() )
+	function responsive_wp_title( $title, $sep ) {
+		global $paged, $page;
+
+		if ( is_feed() )
+			return $title;
+
+		// Add the site name.
+		$title .= get_bloginfo( 'name' );
+
+		// Add the site description for the home/front page.
+		$site_description = get_bloginfo( 'description', 'display' );
+		if ( $site_description && ( is_home() || is_front_page() ) )
+			$title = "$title $sep $site_description";
+
+		// Add a page number if necessary.
+		if ( $paged >= 2 || $page >= 2 )
+			$title = "$title $sep " . sprintf( __( 'Page %s', 'responsive' ), max( $paged, $page ) );
+
 		return $title;
+	}
+	add_filter( 'wp_title', 'responsive_wp_title', 10, 2 );
 
-	// Add the site name.
-	$title .= get_bloginfo( 'name' );
-
-	// Add the site description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		$title = "$title $sep $site_description";
-
-	// Add a page number if necessary.
-	if ( $paged >= 2 || $page >= 2 )
-		$title = "$title $sep " . sprintf( __( 'Page %s', 'responsive' ), max( $paged, $page ) );
-
-	return $title;
-}
-add_filter( 'wp_title', 'responsive_wp_title', 10, 2 );
+endif;
 
 /**
  * Filter 'get_comments_number'
@@ -367,7 +434,8 @@ add_filter('gallery_style', 'responsive_remove_gallery_css');
  */
 function responsive_remove_recent_comments_style() {
 	global $wp_widget_factory;
-	remove_action( 'wp_head', array( $wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style' ) );
+	if ( isset($wp_widget_factory->widgets['WP_Widget_Recent_Comments']) )
+		remove_action( 'wp_head', array( $wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style' ) );
 }
 add_action( 'widgets_init', 'responsive_remove_recent_comments_style' );
 
@@ -382,7 +450,7 @@ if (!function_exists('responsive_post_meta_data')) :
 function responsive_post_meta_data() {
 	printf( __( '<span class="%1$s">Posted on </span>%2$s<span class="%3$s"> by </span>%4$s', 'responsive' ),
 	'meta-prep meta-prep-author posted', 
-	sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><span class="timestamp">%3$s</span></a>',
+	sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><span class="timestamp updated">%3$s</span></a>',
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		esc_html( get_the_date() )
@@ -516,9 +584,9 @@ function responsive_breadcrumb_lists() {
 			$parent_id  = $post->post_parent;
 			$breadcrumbs = array();
 			while ($parent_id) {
-				$page = get_page($parent_id);
-				$breadcrumbs[] = sprintf($link, get_permalink($page->ID), get_the_title($page->ID));
-				$parent_id  = $page->post_parent;
+				$page_child = get_page($parent_id);
+				$breadcrumbs[] = sprintf($link, get_permalink($page_child->ID), get_the_title($page_child->ID));
+				$parent_id  = $page_child->post_parent;
 			}
 			$breadcrumbs = array_reverse($breadcrumbs);
 			for ($i = 0; $i < count($breadcrumbs); $i++) {
@@ -585,22 +653,27 @@ endif;
      */	
     function responsive_theme_support () {
     ?>
-    
-    <div id="info-box-wrapper" class="grid col-940">
-        <div class="info-box notice">
-            <a class="blue button" href="<?php echo esc_url(__('http://themeid.com/support/','responsive')); ?>" title="<?php esc_attr_e('Theme Support', 'responsive'); ?>" target="_blank">
-            <?php printf(__('Theme Support','responsive')); ?></a>
-            
-            <a class="gray button" href="<?php echo esc_url(__('http://themeid.com/themes/','responsive')); ?>" title="<?php esc_attr_e('More Themes', 'responsive'); ?>" target="_blank">
-            <?php printf(__('More Themes','responsive')); ?></a>
-            
-            <a class="gray button" href="<?php echo esc_url(__('http://themeid.com/showcase/','responsive')); ?>" title="<?php esc_attr_e('Showcase', 'responsive'); ?>" target="_blank">
-            <?php printf(__('Showcase','responsive')); ?></a>
-            
-            <a class="gold button" href="<?php echo esc_url(__('http://themeid.com/donate/','responsive')); ?>" title="<?php esc_attr_e('Donate Now', 'responsive'); ?>" target="_blank">
-            <?php printf(__('Donate Now','responsive')); ?></a>
-        </div>
-    </div>
+
+	<div id="info-box-wrapper" class="grid col-940">
+		<div class="info-box notice">
+
+			<a class="button" href="<?php echo esc_url(__('http://themeid.com/docs/','responsive')); ?>" title="<?php esc_attr_e('Documentation', 'responsive'); ?>" target="_blank">
+			<?php printf(__('Documentation','responsive')); ?></a>
+
+			<a class="button button-primary" href="<?php echo esc_url(__('http://themeid.com/support/','responsive')); ?>" title="<?php esc_attr_e('Theme Support', 'responsive'); ?>" target="_blank">
+			<?php printf(__('Theme Support','responsive')); ?></a>
+
+			<a class="button" href="<?php echo esc_url(__('https://webtranslateit.com/en/projects/3598-Responsive-Theme','responsive')); ?>" title="<?php esc_attr_e('Translate', 'responsive'); ?>" target="_blank">
+			<?php printf(__('Translate','responsive')); ?></a>
+
+			<a class="button" href="<?php echo esc_url(__('http://themeid.com/showcase/','responsive')); ?>" title="<?php esc_attr_e('Showcase', 'responsive'); ?>" target="_blank">
+			<?php printf(__('Showcase','responsive')); ?></a>
+
+			<a class="button" href="<?php echo esc_url(__('http://themeid.com/themes/','responsive')); ?>" title="<?php esc_attr_e('More Themes', 'responsive'); ?>" target="_blank">
+			<?php printf(__('More Themes','responsive')); ?></a>
+
+		</div>
+	</div>
 
     <?php }
  

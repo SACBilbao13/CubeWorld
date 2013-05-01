@@ -1,0 +1,107 @@
+@CHARSET "UTF-8";
+
+/* Initial style for all comment providers */
+.comment-provider {
+	display: none;
+}
+
+/* Style applied to currently selected provider */
+.comment-provider.selected-comment-provider {
+	display: block; /* Reset the initial display */
+	clear: both;
+}
+
+
+.comment-provider-waiting-response {
+	background: url(../img/loading.gif) top left no-repeat;
+	height: 35px;
+	width: 35px;
+	margin: 10px auto;
+}
+
+.comment-provider textarea {
+	clear: both;
+    width: 97%;
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+
+ul#all-comment-providers {
+	margin: 0 !important;
+	padding: 0 !important;
+	clear: both !important;
+	list-style-type: none !important;
+}
+ul#all-comment-providers li {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+ul#all-comment-providers li a {
+	display: block;
+	float: left;
+	width: 20%;
+	height: 32px;
+}
+ul#all-comment-providers li a:hover {
+	text-decoration: none;
+}
+ul#all-comment-providers li.selected-comment-provider a {
+	background-color: #edf8fc;
+}
+ul#all-comment-providers li a span {
+	margin-left: 32px;
+	line-height: 32px;
+}
+
+
+ul#all-comment-providers li a#comment-provider-wordpress-link {
+	background-image: url(../img/wp.png);
+	background-position: 8px 8px;
+	background-repeat: no-repeat
+}
+ul#all-comment-providers li a#comment-provider-facebook-link {
+	background-image: url(../img/fb.png);
+	background-position: 8px 8px;
+	background-repeat: no-repeat
+}
+ul#all-comment-providers li a#comment-provider-twitter-link {
+	background-image: url(../img/tw.png);
+	background-position: 8px 8px;
+	background-repeat: no-repeat
+}
+ul#all-comment-providers li a#comment-provider-google-link {
+	background-image: url(../img/gg.png);
+	background-position: 8px 8px;
+	background-repeat: no-repeat
+}
+
+/*** Login buttons ***/
+.comment-provider-login-button {
+	margin: 10px auto;
+	width: 165px;
+}
+.comment-provider-login-button a {
+	display: block;
+	width: 160px;
+	height: 25px;
+	background: none;
+}
+.comment-provider-login-button a span {
+	display: none;
+	position: absolute;
+	left: -1200000000px;
+}
+#login-with-twitter {
+	background: url(../img/tw-login.png) top left no-repeat;
+}
+#login-with-facebook {
+	background: url(../img/fb-login.png) top left no-repeat;
+}
+#login-with-google {
+	background: url(../img/gg-login.png) top left no-repeat;
+}
+
+#post-on-facebook, #post-on-twitter, form #subscribe {float:left;margin:0.3em 0.5em 0 0;padding:0.5em 0 0;} /* apply to #subscribe within form, to fix http://www.coachcalorie.com issue */	    		 	 			 		  
+#comment-provider-google p{padding-top:0.5em;}
+
+
+/* 137717-1367065181 */

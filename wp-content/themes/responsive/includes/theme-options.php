@@ -18,70 +18,6 @@ if ( !defined('ABSPATH')) exit;
  * @since          available since Release 1.0
  */
 
-/*
- * Globalize Theme options
- */
-global $responsive_options;
-$responsive_options = responsive_get_options();
-
-/*
- * Hook options
- */
-add_action('admin_init', 'responsive_theme_options_init');
-add_action('admin_menu', 'responsive_theme_options_add_page');
-
-/**
- * Retrieve Theme option settings
- */
-function responsive_get_options() {
-	// Globalize the variable that holds the Theme options
-	global $responsive_options;
-	// Parse array of option defaults against user-configured Theme options
-	$responsive_options = wp_parse_args( get_option( 'responsive_theme_options', array() ), responsive_get_option_defaults() );
-	// Return parsed args array
-	return $responsive_options;
-}
-
-/**
- * Responsive Theme option defaults
- */
-function responsive_get_option_defaults() {
-	$defaults = array(
-		'breadcrumb' => false,
-		'cta_button' => false,
-		'front_page' => 1,
-		'home_headline' => __('Hello, World!','responsive'),
-		'home_subheadline' => __('Your H2 subheadline here','responsive'),
-		'home_content_area' => __('Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like.','responsive'),
-		'cta_text' => __('Call to Action','responsive'),
-		'cta_url' => '#nogo',
-		'featured_content' => '<img class="aligncenter" src="' . get_template_directory_uri() . '/images/featured-image.png" width="440" height="300" alt="" />',
-		'google_site_verification' => '',
-		'bing_site_verification' => '',
-		'yahoo_site_verification' => '',
-		'site_statistics_tracker' => '',
-		'twitter_uid' => '',
-		'facebook_uid' => '',
-		'linkedin_uid' => '',
-		'youtube_uid' => '',
-		'stumble_uid' => '',
-		'rss_uid' => '',
-		'google_plus_uid' => '',
-		'instagram_uid' => '',
-		'pinterest_uid' => '',
-		'yelp_uid' => '',
-		'vimeo_uid' => '',
-		'foursquare_uid' => '',
-		'responsive_inline_css' => '',
-		'responsive_inline_js_head' => '',
-		'responsive_inline_css_js_footer' => '',
-		'static_page_layout_default' => 'content-sidebar-page',
-		'single_post_layout_default' => 'content-sidebar-page',
-		'blog_posts_index_layout_default' => 'content-sidebar-page',
-	);
-	return apply_filters( 'responsive_option_defaults', $defaults );
-}
-
 /**
  * A safe way of adding JavaScripts to a WordPress generated page.
  */
@@ -283,7 +219,7 @@ function responsive_theme_options_do_page() {
                 ?>
                 <div class="grid col-300"><?php _e('Headline', 'responsive'); ?></div><!-- end of .grid col-300 -->
                     <div class="grid col-620 fit">
-                        <input id="responsive_theme_options[home_headline]" class="regular-text" type="text" name="responsive_theme_options[home_headline]" value="<?php if (!empty($responsive_options['home_headline'])) echo esc_attr($responsive_options['home_headline']); ?>" />
+                        <input id="responsive_theme_options[home_headline]" class="regular-text" type="text" name="responsive_theme_options[home_headline]" placeholder="<?php _e( 'Hello, World!', 'responsive' ); ?>" value="<?php if (!empty($responsive_options['home_headline'])) echo esc_attr($responsive_options['home_headline']); ?>" />
                         <label class="description" for="responsive_theme_options[home_headline]"><?php _e('Enter your headline', 'responsive'); ?></label>
                     </div><!-- end of .grid col-620 -->
 
@@ -294,7 +230,7 @@ function responsive_theme_options_do_page() {
                 ?>
                 <div class="grid col-300"><?php _e('Subheadline', 'responsive'); ?></div><!-- end of .grid col-300 -->
                     <div class="grid col-620 fit">
-                        <input id="responsive_theme_options[home_subheadline]" class="regular-text" type="text" name="responsive_theme_options[home_subheadline]" value="<?php if (!empty($responsive_options['home_subheadline'])) echo esc_attr($responsive_options['home_subheadline']); ?>" />
+                        <input id="responsive_theme_options[home_subheadline]" class="regular-text" type="text" name="responsive_theme_options[home_subheadline]" placeholder="<?php _e( 'Your H2 subheadline here', 'responsive' ); ?>" value="<?php if (!empty($responsive_options['home_subheadline'])) echo esc_attr($responsive_options['home_subheadline']); ?>" />
                         <label class="description" for="responsive_theme_options[home_subheadline]"><?php _e('Enter your subheadline', 'responsive'); ?></label>
                     </div><!-- end of .grid col-620 -->
                     
@@ -305,7 +241,7 @@ function responsive_theme_options_do_page() {
                 ?>
                 <div class="grid col-300"><?php _e('Content Area', 'responsive'); ?></div><!-- end of .grid col-300 -->
                     <div class="grid col-620 fit">
-                        <textarea id="responsive_theme_options[home_content_area]" class="large-text" cols="50" rows="10" name="responsive_theme_options[home_content_area]"><?php if (!empty($responsive_options['home_content_area'])) echo esc_html($responsive_options['home_content_area']); ?></textarea>
+                        <textarea id="responsive_theme_options[home_content_area]" class="large-text" cols="50" rows="10" name="responsive_theme_options[home_content_area]" placeholder="<?php _e( 'Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like.','responsive' ); ?>"><?php if (!empty($responsive_options['home_content_area'])) echo esc_html($responsive_options['home_content_area']); ?></textarea>
                         <label class="description" for="responsive_theme_options[home_content_area]"><?php _e('Enter your content', 'responsive'); ?></label>
                     </div><!-- end of .grid col-620 -->
                                 
@@ -316,7 +252,7 @@ function responsive_theme_options_do_page() {
                 ?>
                 <div class="grid col-300"><?php _e('Call to Action (URL)', 'responsive'); ?></div><!-- end of .grid col-300 -->
                     <div class="grid col-620 fit">
-                        <input id="responsive_theme_options[cta_url]" class="regular-text" type="text" name="responsive_theme_options[cta_url]" value="<?php if (!empty($responsive_options['cta_url'])) echo esc_url($responsive_options['cta_url']); ?>" />
+                        <input id="responsive_theme_options[cta_url]" class="regular-text" type="text" name="responsive_theme_options[cta_url]" placeholder="#nogo">
                         <label class="description" for="responsive_theme_options[cta_url]"><?php _e('Enter your call to action URL', 'responsive'); ?></label>
                     </div><!-- end of .grid col-620 -->
                 
@@ -327,7 +263,7 @@ function responsive_theme_options_do_page() {
                 ?>
                 <div class="grid col-300"><?php _e('Call to Action (Text)', 'responsive'); ?></div><!-- end of .grid col-300 -->
                     <div class="grid col-620 fit">
-                        <input id="responsive_theme_options[cta_text]" class="regular-text" type="text" name="responsive_theme_options[cta_text]" value="<?php if (!empty($responsive_options['cta_text'])) echo esc_attr($responsive_options['cta_text']); ?>" />
+                        <input id="responsive_theme_options[cta_text]" class="regular-text" type="text" name="responsive_theme_options[cta_text]" placeholder="<?php _e('Call to Action','responsive'); ?>" value="<?php if (!empty($responsive_options['cta_text'])) echo esc_attr($responsive_options['cta_text']); ?>" />
                         <label class="description" for="responsive_theme_options[cta_text]"><?php _e('Enter your call to action text', 'responsive'); ?></label>
                     </div><!-- end of .grid col-620 -->
 
@@ -342,7 +278,7 @@ function responsive_theme_options_do_page() {
                     <?php printf(__('See Docs','responsive')); ?></a>
                 </div><!-- end of .grid col-300 -->
                     <div class="grid col-620 fit">
-                        <textarea id="responsive_theme_options[featured_content]" class="large-text" cols="50" rows="10" name="responsive_theme_options[featured_content]"><?php if (!empty($responsive_options['featured_content'])) echo esc_html($responsive_options['featured_content']); ?></textarea>
+                        <textarea id="responsive_theme_options[featured_content]" class="large-text" cols="50" rows="10" name="responsive_theme_options[featured_content]" placeholder="<img class='aligncenter' src='<?php get_template_directory_uri(); ?>/images/featured-image.png' width='440' height='300' alt='' />"><?php if (!empty($responsive_options['featured_content'])) echo esc_html($responsive_options['featured_content']); ?></textarea>
                         <label class="description" for="responsive_theme_options[featured_content]"><?php _e('Paste your shortcode, video or image source', 'responsive'); ?></label>
                         <p class="submit">
 						<?php submit_button( __( 'Save Options', 'responsive' ), 'primary', 'responsive_theme_options[submit]', false ); ?>

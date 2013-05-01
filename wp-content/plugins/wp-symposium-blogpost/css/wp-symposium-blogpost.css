@@ -1,0 +1,50 @@
+/*  Copyright 2012  Guillaume Assire aka AlphaGolf (alphagolf@rocketmail.com)
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License, version 2, as 
+    published by the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+.symposium-wrapper .symposium_blogpost_row, .__wps__wrapper .symposium_blogpost_row {
+	background-color: #FEFEFE;
+	color: #000000;
+	clear:both; 
+	margin-top:8px; 
+	overflow: auto; 
+	width:95%; 
+	margin-bottom: 0px;
+	padding:6px;
+}
+.symposium-wrapper .blogpost_info, .__wps__wrapper .blogpost_info {
+	width:100%; 
+	padding-left: 0px; 
+	margin-left: 0px;
+}
+
+
+/* OTHER ============================================================== */
+
+.ui-autocomplete {
+	max-height: 300px;
+	overflow-y: auto;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+	/* add padding to account for vertical scrollbar */
+	padding-right: 20px;
+}
+/* IE 6 doesn't support max-height
+ * we use height instead, but this forces the menu to always be this tall
+ */
+* html .ui-autocomplete {
+	height: 150px;
+}
+

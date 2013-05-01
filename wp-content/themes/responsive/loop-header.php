@@ -33,7 +33,8 @@ endif;
 /**
  * Display archive information
  */
-if ( is_archive() ) {
+
+if ( is_category() || is_tag() || is_author() || is_date() ) {
 	?>
 	<h6 class="title-archive">
 		<?php 

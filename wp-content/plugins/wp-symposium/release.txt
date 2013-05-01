@@ -1,0 +1,55 @@
+*************************
+* Change log for v13.04 *
+*************************
+
+_____Enhancements_____
+
+CORE
+
+* Replaced the file upload routine (Uploadify) to avoid use of Flash (modern browsers recommended)
+* File upload can now be used on iPhone, iPad, etc (as not using Flash)
+* Login prompts link to login page, with redirect back to referring page
+* New "Settings" option to switch WYSIWYG editor image dialog to use WordPress media manager images
+* Added audit function for developers (activate via Manage->Settings, analyse via Manage->Audit)
+* Added search to Manage->Forum Posts admin page (search the topic/reply post text)
+* Quickly change forum topic categories via Manage->Forum Posts admin page
+
+PROFILE 
+
+* By default, profile page now uses a in-built layout (for theme compatibility)
+* Switch back to templates on Options->Profile (first option)
+* Moved horizontal tabs to be part of "Profile", out of "Profile Plus" (in free version)
+* Changed default style of horizontal menu to "tabs" (can be styled, will post article on blog)
+
+PROFILE PLUS
+
+* Embed YouTube videos in activity (select via Options->Profile Plus)
+
+FORUM
+
+* New YouTube button on WYSIWYG editor toolbar
+
+FACEBOOK CONNECT
+
+* Re-written to let users connect by logging in to Facebook
+* Activity posts sent to Facebook Timeline include any attached images/YouTube videos
+
+EVENTS
+
+* Display global list of events as a calendar (select via Options->Events)
+
+GROUPS
+
+* By default, group page now uses in-built layout (for theme compatibility)
+* Switch back to templates on Options->Groups (first option)
+
+MOBILE
+
+* Completely overhauled, more improvements to come in future releases
+
+_____Bug_Fixes_____
+
+* Carriage returns on forum editing and replies (WPMS)
+* Font family/size dropdown list was not displaying when editing existing forum posts
+* Payment button was showing when no payment due on Events
+* Various minor miscellaneous fixes

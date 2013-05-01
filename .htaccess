@@ -1,5 +1,3 @@
-
-
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -11,4 +9,3 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
-

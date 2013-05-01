@@ -30,24 +30,8 @@ get_header(); ?>
 				<?php get_template_part( 'post-meta-page' ); ?>
 
 				<div class="post-entry" style="text-align:center">
-					<div align="left">
-					<h3>Instructions</h3>
-					In this game you can take the control of one Cubesat in landing operation. You should not let it fall very
-					quickly or the Cubesat will break by the gravity acceleration.<br>
-					<br>
-					To keep the control of the Cubesat, you need the following keyboard controls:<br>
-					<br>
-					<b>W</b> To retain the CubeSat.<br>
-					<b>A</b> To move left.<br>
-					<b>D</b> To move right.<br>
-					<br>
-					Be careful! Because you have a limited amount of fuel, and it consumes each you push the retain button, if you
-					waste all the fuel, your Cubesat probably will crash to the ground.<br>
-					<br>
-					Good luck!
-				</div>
-					<script type="text/javascript" charset="UTF-8" src="<?php bloginfo('siteurl'); ?>/wp-includes/js/games/library.js"></script>
-					<script type="application/processing">
+				<script type="text/javascript" charset="UTF-8" src="<?php echo dirname(get_bloginfo('stylesheet_url')); ?>/js/games/library.js"></script>
+				<script type="application/processing">
 
 // images
 PImage cubeSat;
@@ -234,7 +218,22 @@ void draw(){
 					<canvas style="outline: none;" width="600" height="600"></canvas>
 
 				</div><!-- end of .post-entry -->
-
+				<div align="left">
+					<h3>Instructions</h3>
+					In this game you can take the control of one Cubesat in landing operation. You should not let it fall very
+					quickly or the Cubesat will break by the gravity acceleration.<br>
+					<br>
+					To keep the control of the Cubesat, you need the following keyboard controls:<br>
+					<br>
+					<b>W</b> To retain the CubeSat.<br>
+					<b>A</b> To move left.<br>
+					<b>D</b> To move right.<br>
+					<br>
+					Be careful! Because you have a limited amount of fuel, and it consumes each you push the retain button, if you
+					waste all the fuel, your Cubesat probably will crash to the ground.<br>
+					<br>
+					Good luck!
+				</div>
 				<?php get_template_part( 'post-data' ); ?>
 
 				<?php responsive_entry_bottom(); ?>

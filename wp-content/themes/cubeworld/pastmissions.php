@@ -33,7 +33,7 @@ get_header(); ?>
 					Here you can get more information about past launches of the Cubesat project, the information
 					is updated in real-time.
 					<?php
-						include('simple_html_dom.php');
+						include('includes/simple_html_dom.php');
 						$html = file_get_html('http://www.cubesat.org/index.php/missions/past-launches');
 
 						echo '<ul id="past-missions">';

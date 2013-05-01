@@ -1,0 +1,639 @@
+# Translation of the WordPress plugin WordPress Chat 1.3.2.7 by Paul Menard (Incsub), S H Mohanjith (Incsub).
+# Copyright (C) 2013 Paul Menard (Incsub), S H Mohanjith (Incsub)
+# This file is distributed under the same license as the WordPress Chat package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Chat 1.3.2.7\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wordpress-chat\n"
+"POT-Creation-Date: 2013-03-15 10:07-0500\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: default-layouts/chat-inline.php:14 wordpress-chat.php:2514
+msgid "To get started just enter your email address and desired username"
+msgstr ""
+
+#: default-layouts/chat-inline.php:27 wordpress-chat.php:2528
+msgid "You must be logged in to participate in chats"
+msgstr ""
+
+#: default-layouts/chat-inline.php:38 wordpress-chat.php:2539
+msgid "Chat Logs"
+msgstr ""
+
+#: lib/dash-notices/wpmudev-dash-notification.php:57
+#, php-format
+msgid ""
+"Easily get updates, support, and one-click WPMU DEV plugin/theme "
+"installations right from in your dashboard - <strong><a href=\"%s\" title="
+"\"Install Now &raquo;\">install the free WPMU DEV Dashboard plugin</a></"
+"strong>. &nbsp;&nbsp;&nbsp;<small><a href=\"http://premium.wpmudev.org/wpmu-"
+"dev/update-notifications-plugin-information/\">(find out more)</a></small>"
+msgstr ""
+
+#: lib/dash-notices/wpmudev-dash-notification.php:61
+#, php-format
+msgid ""
+"Updates, Support, Premium Plugins, Community - <strong><a href=\"%s\" title="
+"\"Activate Now &raquo;\">activate the WPMU DEV Dashboard plugin now</a></"
+"strong>."
+msgstr ""
+
+#: wordpress-chat.php:477
+msgid "Chat Plugin Options"
+msgstr ""
+
+#: wordpress-chat.php:477 wordpress-chat.php:2330
+msgid "Chat"
+msgstr ""
+
+#: wordpress-chat.php:735 wordpress-chat.php:1098 wordpress-chat.php:1410
+msgid "Play sound when a new message is received?"
+msgstr ""
+
+#: wordpress-chat.php:747 wordpress-chat.php:1109 wordpress-chat.php:1421
+msgid "Display the user's avatar with the message?"
+msgstr ""
+
+#: wordpress-chat.php:758 wordpress-chat.php:1120 wordpress-chat.php:1432
+msgid "Display emoticons bar?"
+msgstr ""
+
+#: wordpress-chat.php:769 wordpress-chat.php:1131 wordpress-chat.php:1443
+msgid "Display date the message was sent?"
+msgstr ""
+
+#: wordpress-chat.php:780 wordpress-chat.php:1142 wordpress-chat.php:1454
+msgid "Display the time  the message was sent?"
+msgstr ""
+
+#: wordpress-chat.php:789 wordpress-chat.php:1151 wordpress-chat.php:1463
+msgid "Dimensions of the chat box. Include px, em, etc."
+msgstr ""
+
+#: wordpress-chat.php:806 wordpress-chat.php:1166 wordpress-chat.php:1550
+msgid "Chat box background color"
+msgstr ""
+
+#: wordpress-chat.php:866 wordpress-chat.php:1226
+msgid "Chat box background color when there is a new message"
+msgstr ""
+
+#: wordpress-chat.php:875
+msgid "Date background color"
+msgstr ""
+
+#: wordpress-chat.php:884 wordpress-chat.php:1244 wordpress-chat.php:1568
+msgid "Name background color"
+msgstr ""
+
+#: wordpress-chat.php:893 wordpress-chat.php:1253 wordpress-chat.php:1577
+msgid "Moderator Name background color"
+msgstr ""
+
+#: wordpress-chat.php:902 wordpress-chat.php:1262 wordpress-chat.php:1586
+msgid "Text color"
+msgstr ""
+
+#: wordpress-chat.php:921 wordpress-chat.php:1280 wordpress-chat.php:1604
+msgid "Chat box font"
+msgstr ""
+
+#: wordpress-chat.php:933 wordpress-chat.php:1292 wordpress-chat.php:1615
+msgid "Chat box font size"
+msgstr ""
+
+#: wordpress-chat.php:952 wordpress-chat.php:1309
+msgid "Log chat messages?"
+msgstr ""
+
+#: wordpress-chat.php:963 wordpress-chat.php:1320
+msgid "Display chat logs?"
+msgstr ""
+
+#: wordpress-chat.php:971 wordpress-chat.php:1326 wordpress-chat.php:1620
+msgid "Number of messages to display on initial page load"
+msgstr ""
+
+#: wordpress-chat.php:974 wordpress-chat.php:1329 wordpress-chat.php:1623
+msgid "Number of Messages"
+msgstr ""
+
+#: wordpress-chat.php:979 wordpress-chat.php:1334 wordpress-chat.php:1628
+msgid "set empty for all"
+msgstr ""
+
+#: wordpress-chat.php:981 wordpress-chat.php:1336 wordpress-chat.php:1630
+msgid "Note: This does not truncate the message in the database."
+msgstr ""
+
+#: wordpress-chat.php:995 wordpress-chat.php:1347 wordpress-chat.php:1641
+msgid "WordPress user"
+msgstr ""
+
+#: wordpress-chat.php:997 wordpress-chat.php:1349 wordpress-chat.php:1643
+msgid "Network user"
+msgstr ""
+
+#: wordpress-chat.php:999 wordpress-chat.php:1351 wordpress-chat.php:1645
+msgid "Public user"
+msgstr ""
+
+#: wordpress-chat.php:1001 wordpress-chat.php:1352 wordpress-chat.php:1646
+msgid "Twitter"
+msgstr ""
+
+#: wordpress-chat.php:1004 wordpress-chat.php:1353 wordpress-chat.php:1647
+msgid "Facebook"
+msgstr ""
+
+#: wordpress-chat.php:1007 wordpress-chat.php:1649
+msgid ""
+"Authentication methods users can use. <strong>If only 'WordPress user' is "
+"selected then chat will be hidden from non-authenticated users.</strong>"
+msgstr ""
+
+#: wordpress-chat.php:1023 wordpress-chat.php:1372 wordpress-chat.php:1666
+msgid "Select which roles are moderators"
+msgstr ""
+
+#: wordpress-chat.php:1071 wordpress-chat.php:1971
+msgid "Chat Settings"
+msgstr ""
+
+#: wordpress-chat.php:1077
+msgid "In post chat options"
+msgstr ""
+
+#: wordpress-chat.php:1078
+msgid "Bottom corner chat"
+msgstr ""
+
+#: wordpress-chat.php:1079
+msgid "Twitter API"
+msgstr ""
+
+#: wordpress-chat.php:1080
+msgid "Facebook API"
+msgstr ""
+
+#: wordpress-chat.php:1081
+msgid "Advanced"
+msgstr ""
+
+#: wordpress-chat.php:1085
+msgid "Default options for in post chat boxes."
+msgstr ""
+
+#: wordpress-chat.php:1087 wordpress-chat.php:1398
+msgid "General"
+msgstr ""
+
+#: wordpress-chat.php:1091 wordpress-chat.php:1403
+msgid "Sound"
+msgstr ""
+
+#: wordpress-chat.php:1094 wordpress-chat.php:1105 wordpress-chat.php:1116
+#: wordpress-chat.php:1127 wordpress-chat.php:1138 wordpress-chat.php:1305
+#: wordpress-chat.php:1316 wordpress-chat.php:1388 wordpress-chat.php:1406
+#: wordpress-chat.php:1417 wordpress-chat.php:1428 wordpress-chat.php:1439
+#: wordpress-chat.php:1450 wordpress-chat.php:1978
+msgid "Enabled"
+msgstr ""
+
+#: wordpress-chat.php:1095 wordpress-chat.php:1106 wordpress-chat.php:1117
+#: wordpress-chat.php:1128 wordpress-chat.php:1139 wordpress-chat.php:1306
+#: wordpress-chat.php:1317 wordpress-chat.php:1389 wordpress-chat.php:1407
+#: wordpress-chat.php:1418 wordpress-chat.php:1429 wordpress-chat.php:1440
+#: wordpress-chat.php:1451 wordpress-chat.php:1979
+msgid "Disabled"
+msgstr ""
+
+#: wordpress-chat.php:1102 wordpress-chat.php:1414
+msgid "Avatar"
+msgstr ""
+
+#: wordpress-chat.php:1113 wordpress-chat.php:1425
+msgid "Emoticons"
+msgstr ""
+
+#: wordpress-chat.php:1124 wordpress-chat.php:1436
+msgid "Show date"
+msgstr ""
+
+#: wordpress-chat.php:1135 wordpress-chat.php:1447
+msgid "Show time"
+msgstr ""
+
+#: wordpress-chat.php:1146 wordpress-chat.php:1458
+msgid "Dimensions"
+msgstr ""
+
+#: wordpress-chat.php:1157 wordpress-chat.php:1469
+msgid "Colors"
+msgstr ""
+
+#: wordpress-chat.php:1161 wordpress-chat.php:1545
+msgid "Background"
+msgstr ""
+
+#: wordpress-chat.php:1171 wordpress-chat.php:1485
+msgid "Background Messages Area"
+msgstr ""
+
+#: wordpress-chat.php:1177 wordpress-chat.php:1491
+msgid "Background color of the message area"
+msgstr ""
+
+#: wordpress-chat.php:1181 wordpress-chat.php:1495
+msgid "Row items background"
+msgstr ""
+
+#: wordpress-chat.php:1187 wordpress-chat.php:1501
+msgid "Background color of the message row items"
+msgstr ""
+
+#: wordpress-chat.php:1191 wordpress-chat.php:1505
+msgid "Row items border"
+msgstr ""
+
+#: wordpress-chat.php:1197 wordpress-chat.php:1511
+msgid "Border color of the message row items"
+msgstr ""
+
+#: wordpress-chat.php:1201 wordpress-chat.php:1515
+msgid "Row items border width"
+msgstr ""
+
+#: wordpress-chat.php:1206 wordpress-chat.php:1520
+msgid "Border width of the message row items"
+msgstr ""
+
+#: wordpress-chat.php:1210 wordpress-chat.php:1524
+msgid "Row items spacing"
+msgstr ""
+
+#: wordpress-chat.php:1215 wordpress-chat.php:1529
+msgid "Spacing between row items"
+msgstr ""
+
+#: wordpress-chat.php:1221
+msgid "Highlighted Background"
+msgstr ""
+
+#: wordpress-chat.php:1230 wordpress-chat.php:1554
+msgid "Date"
+msgstr ""
+
+#: wordpress-chat.php:1235 wordpress-chat.php:1559
+msgid "Date and time background color"
+msgstr ""
+
+#: wordpress-chat.php:1239 wordpress-chat.php:1563 wordpress-chat.php:2778
+msgid "Name"
+msgstr ""
+
+#: wordpress-chat.php:1248 wordpress-chat.php:1572
+msgid "Moderator Name"
+msgstr ""
+
+#: wordpress-chat.php:1257 wordpress-chat.php:1581
+msgid "Text"
+msgstr ""
+
+#: wordpress-chat.php:1268 wordpress-chat.php:1592
+msgid "Fonts"
+msgstr ""
+
+#: wordpress-chat.php:1272 wordpress-chat.php:1596
+msgid "Font"
+msgstr ""
+
+#: wordpress-chat.php:1284 wordpress-chat.php:1608
+msgid "Font size"
+msgstr ""
+
+#: wordpress-chat.php:1298
+msgid "Logs"
+msgstr ""
+
+#: wordpress-chat.php:1302
+msgid "Creation"
+msgstr ""
+
+#: wordpress-chat.php:1313
+msgid "Display"
+msgstr ""
+
+#: wordpress-chat.php:1341 wordpress-chat.php:1635
+msgid "Authentication"
+msgstr ""
+
+#: wordpress-chat.php:1345 wordpress-chat.php:1639
+msgid "Login options"
+msgstr ""
+
+#: wordpress-chat.php:1355
+msgid ""
+"Authentication methods users can use. <strong>If only 'WordPress user' is "
+"selected chat will be hidden from non-authenticated users.</strong>"
+msgstr ""
+
+#: wordpress-chat.php:1359 wordpress-chat.php:1653
+msgid "Moderator roles"
+msgstr ""
+
+#: wordpress-chat.php:1379
+msgid "Options for the bottom corner chat"
+msgstr ""
+
+#: wordpress-chat.php:1381
+msgid "Main"
+msgstr ""
+
+#: wordpress-chat.php:1385
+msgid "Show"
+msgstr ""
+
+#: wordpress-chat.php:1392
+msgid "Display bottom corner chat?"
+msgstr ""
+
+#: wordpress-chat.php:1473
+msgid "Border"
+msgstr ""
+
+#: wordpress-chat.php:1478
+msgid "Chat box border color"
+msgstr ""
+
+#: wordpress-chat.php:1536
+msgid "Highlighted Border"
+msgstr ""
+
+#: wordpress-chat.php:1541
+msgid "Chat box border color when there is a new message"
+msgstr ""
+
+#: wordpress-chat.php:1675
+msgid "Consumer key"
+msgstr ""
+
+#: wordpress-chat.php:1681
+#, php-format
+msgid ""
+"Register this site as an application on Twitter's <a target=\"_blank\" href="
+"\"%s\">app registration page</a>"
+msgstr ""
+
+#: wordpress-chat.php:1682
+msgid "If you're not logged in, you can use your Twitter username and password"
+msgstr ""
+
+#: wordpress-chat.php:1683
+msgid ""
+"Your Application's Name will be what shows up after \"via\" in your twitter "
+"stream"
+msgstr ""
+
+#: wordpress-chat.php:1684
+msgid "Application Type should be set on Browser"
+msgstr ""
+
+#: wordpress-chat.php:1685
+msgid "The callback URL should be"
+msgstr ""
+
+#: wordpress-chat.php:1686
+msgid ""
+"Once you have registered your site as an application, you will be provided "
+"with @Anywhere API key."
+msgstr ""
+
+#: wordpress-chat.php:1687 wordpress-chat.php:1707
+msgid "Copy and paste them to the fields on the left"
+msgstr ""
+
+#: wordpress-chat.php:1697
+msgid "App id"
+msgstr ""
+
+#: wordpress-chat.php:1703
+#, php-format
+msgid ""
+"Register this site as an application on Facebook's <a target=\"_blank\" href="
+"\"%s\">app registration page</a>"
+msgstr ""
+
+#: wordpress-chat.php:1704
+msgid ""
+"If you're not logged in, you can use your Facebook username and password"
+msgstr ""
+
+#: wordpress-chat.php:1705
+msgid "The site URL should be"
+msgstr ""
+
+#: wordpress-chat.php:1706
+msgid ""
+"Once you have registered your site as an application, you will be provided "
+"with a App ID and a App secret."
+msgstr ""
+
+#: wordpress-chat.php:1713
+msgid "App secret"
+msgstr ""
+
+#: wordpress-chat.php:1721
+msgid "Facebook Connect Used in Site? (e.g. Facebook Ultimate Connect)"
+msgstr ""
+
+#: wordpress-chat.php:1723
+msgid "Yes"
+msgstr ""
+
+#: wordpress-chat.php:1724
+msgid "No"
+msgstr ""
+
+#: wordpress-chat.php:1733
+msgid "Polling Interval"
+msgstr ""
+
+#: wordpress-chat.php:1736
+msgid "Interval"
+msgstr ""
+
+#: wordpress-chat.php:1740
+msgid "Controls how often the chat polls for new messages."
+msgstr ""
+
+#: wordpress-chat.php:1746
+msgid "WYSIWYG Chat button User Roles"
+msgstr ""
+
+#: wordpress-chat.php:1762
+msgid ""
+"Select which roles will see the Chat WYSIWYG button on the Post editor "
+"screen. Note the user must also have Edit capabilities for the Post type."
+msgstr ""
+
+#: wordpress-chat.php:1768
+msgid "WYSIWYG Chat button Post Types"
+msgstr ""
+
+#: wordpress-chat.php:1781
+msgid "Select which Post Types will have the Chat WYSIWYG button available."
+msgstr ""
+
+#: wordpress-chat.php:1792
+msgid "Save Changes"
+msgstr ""
+
+#: wordpress-chat.php:1830
+msgid "Sign out of Facebook"
+msgstr ""
+
+#: wordpress-chat.php:1831
+msgid "Sign out of Twitter"
+msgstr ""
+
+#: wordpress-chat.php:1832
+msgid "Please wait..."
+msgstr ""
+
+#: wordpress-chat.php:1834
+msgid "Minimize"
+msgstr ""
+
+#: wordpress-chat.php:1836 wordpress-chat.php:2331
+msgid "Maximize"
+msgstr ""
+
+#: wordpress-chat.php:1975
+msgid "Chat sounds"
+msgstr ""
+
+#: wordpress-chat.php:2330
+msgid "Click here to chat!"
+msgstr ""
+
+#: wordpress-chat.php:2519
+msgid "Log in using your:"
+msgstr ""
+
+#: wordpress-chat.php:2601
+msgid "Message"
+msgstr ""
+
+#: wordpress-chat.php:2618
+msgid "The Moderator has closed this chat session"
+msgstr ""
+
+#: wordpress-chat.php:2657
+msgid "\"Enter\" to send. Place code in between [code] tags"
+msgstr ""
+
+#: wordpress-chat.php:2661
+msgid "Logout"
+msgstr ""
+
+#: wordpress-chat.php:2671 wordpress-chat.php:2674
+msgid "Close Chat"
+msgstr ""
+
+#: wordpress-chat.php:2672 wordpress-chat.php:2675
+msgid "Open Chat"
+msgstr ""
+
+#: wordpress-chat.php:2679
+msgid "Archive"
+msgstr ""
+
+#: wordpress-chat.php:2681
+msgid "Clear"
+msgstr ""
+
+#: wordpress-chat.php:2779
+msgid "E-mail"
+msgstr ""
+
+#: wordpress-chat.php:2780
+msgid "Login"
+msgstr ""
+
+#: wordpress-chat.php:3054
+msgid "undelete"
+msgstr ""
+
+#: wordpress-chat.php:3057
+msgid "delete"
+msgstr ""
+
+#: wordpress-chat.php:3509
+msgid "WPMU DEV Chat Widget."
+msgstr ""
+
+#: wordpress-chat.php:3510
+msgid "WPMU DEV Chat Widget"
+msgstr ""
+
+#: wordpress-chat.php:3559
+msgid "Title:"
+msgstr ""
+
+#: wordpress-chat.php:3566
+msgid "Height for widget:"
+msgstr ""
+
+#: wordpress-chat.php:3570
+#, php-format
+msgid "The width will be 100% of the widget area"
+msgstr ""
+
+#: wordpress-chat.php:3577
+msgid "Play Sound on new messages"
+msgstr ""
+
+#: wordpress-chat.php:3582
+msgid "Show User Avatars"
+msgstr ""
+
+#: wordpress-chat.php:3587
+msgid "Show Date"
+msgstr ""
+
+#: wordpress-chat.php:3592
+msgid "Show Time"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WordPress Chat"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://premium.wpmudev.org/project/wordpress-chat-plugin"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Provides you with a fully featured chat area either in a post, page or "
+"bottom corner of your site - once activated configure <a href=\"options-"
+"general.php?page=chat\">here</a> and drop into a post or page by clicking on "
+"the new chat icon in your post/page editor."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Paul Menard (Incsub), S H Mohanjith (Incsub)"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://premium.wpmudev.org"
+msgstr ""
